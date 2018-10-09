@@ -12,6 +12,35 @@ use App\Controller\AppController;
  */
 class AgenciesController extends AppController
 {
+    
+      public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['tags']);
+    }
+    
+     public function isAuthorized($user) {
+        $action = $this->request->getParam('action');
+        // The add and tags actions are always allowed to logged in users.
+        if (in_array($action, ['add', 'tags'])) {
+            return true;
+        }
+
+        // All other actions require a slug.
+        $id = $this->request->getParam('pass.0');
+        if (!$id) {
+            return false;
+        }
+        if ($user['type'] === 'agencie'){            
+         // Check that the article belongs to the current user.
+        $agencie = $this->Agencies->findById($id)->first();
+
+        return $agencie->user_id === $user['id'];
+            
+        }
+        
+
+      
+    }
 
     /**
      * Index method
@@ -20,6 +49,9 @@ class AgenciesController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Users', 'Codes']
+        ];
         $agencies = $this->paginate($this->Agencies);
 
         $this->set(compact('agencies'));
@@ -35,7 +67,7 @@ class AgenciesController extends AppController
     public function view($id = null)
     {
         $agency = $this->Agencies->get($id, [
-            'contain' => ['Files', 'Tags']
+            'contain' => ['Users', 'Codes', 'Files', 'Tags']
         ]);
 
         $this->set('agency', $agency);
@@ -58,9 +90,12 @@ class AgenciesController extends AppController
             }
             $this->Flash->error(__('The agency could not be saved. Please, try again.'));
         }
+      $users = $this->Agencies->Users->find('list', ['limit' => 200]);
+        $codes = $this->Agencies->Codes->find('list', ['limit' => 200]);
         $files = $this->Agencies->Files->find('list', ['limit' => 200]);
         $tags = $this->Agencies->Tags->find('list', ['limit' => 200]);
-        $this->set(compact('agency', 'files', 'tags'));
+         $user = $this->Auth->user();
+        $this->set(compact('agency', 'users', 'codes', 'files', 'tags', 'user'));
     }
 
     /**
@@ -84,9 +119,12 @@ class AgenciesController extends AppController
             }
             $this->Flash->error(__('The agency could not be saved. Please, try again.'));
         }
+        $users = $this->Agencies->Users->find('list', ['limit' => 200]);
+        $codes = $this->Agencies->Codes->find('list', ['limit' => 200]);
         $files = $this->Agencies->Files->find('list', ['limit' => 200]);
         $tags = $this->Agencies->Tags->find('list', ['limit' => 200]);
-        $this->set(compact('agency', 'files', 'tags'));
+          $user = $this->Auth->user();
+        $this->set(compact('agency', 'users', 'codes', 'files', 'tags', 'user'));
     }
 
     /**

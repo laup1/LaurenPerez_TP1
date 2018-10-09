@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 04 Octobre 2018 à 16:39
--- Version du serveur :  5.7.19-log
+-- Généré le :  Mar 09 Octobre 2018 à 18:08
+-- Version du serveur :  5.5.58
 -- Version de PHP :  5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -30,15 +30,10 @@ CREATE TABLE IF NOT EXISTS `agencies` (
   `id` int(11) NOT NULL,
   `agencie_details` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created` date NOT NULL,
-  `modified` date NOT NULL
+  `modified` date NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `code_id` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Contenu de la table `agencies`
---
-
-INSERT INTO `agencies` (`id`, `agencie_details`, `created`, `modified`) VALUES
-(1, 'mon agence', '2018-08-27', '2018-08-27');
 
 -- --------------------------------------------------------
 
@@ -169,14 +164,20 @@ CREATE TABLE IF NOT EXISTS `tags` (
 
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
-  `agencie_id` int(11) NOT NULL,
-  `code_id` int(11) NOT NULL,
   `created` date NOT NULL,
   `modified` date NOT NULL,
   `username` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'agencie'
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Contenu de la table `users`
+--
+
+INSERT INTO `users` (`id`, `created`, `modified`, `username`, `email`, `password`, `type`) VALUES
+(2, '2018-10-08', '2018-10-08', 'admin', 'laurent_perez@hotmail.com', '1234', 'admin');
 
 --
 -- Index pour les tables exportées
@@ -186,7 +187,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Index pour la table `agencies`
 --
 ALTER TABLE `agencies`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `code_id` (`code_id`) USING BTREE;
 
 --
 -- Index pour la table `agencies_files`
@@ -228,8 +231,8 @@ ALTER TABLE `i18n`
 --
 ALTER TABLE `invoices`
   ADD PRIMARY KEY (`id`) USING BTREE,
-  ADD KEY `user_id` (`agencie_id`),
-  ADD KEY `status_id` (`status_id`);
+  ADD KEY `status_id` (`status_id`),
+  ADD KEY `agency_id` (`agencie_id`) USING BTREE;
 
 --
 -- Index pour la table `status`
@@ -247,9 +250,7 @@ ALTER TABLE `tags`
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `code_id` (`code_id`),
-  ADD KEY `agency_id` (`agencie_id`) USING BTREE;
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT pour les tables exportées
@@ -304,10 +305,17 @@ ALTER TABLE `tags`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- Contraintes pour les tables exportées
 --
+
+--
+-- Contraintes pour la table `agencies`
+--
+ALTER TABLE `agencies`
+  ADD CONSTRAINT `agencies_ibfk_2` FOREIGN KEY (`code_id`) REFERENCES `codes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `agencies_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Contraintes pour la table `agencies_files`
@@ -329,13 +337,6 @@ ALTER TABLE `agencies_tags`
 ALTER TABLE `invoices`
   ADD CONSTRAINT `FK_Agencies_Invoices` FOREIGN KEY (`agencie_id`) REFERENCES `agencies` (`id`),
   ADD CONSTRAINT `FK_Status_Invoices` FOREIGN KEY (`status_id`) REFERENCES `status` (`id`);
-
---
--- Contraintes pour la table `users`
---
-ALTER TABLE `users`
-  ADD CONSTRAINT `FK_Agencies_Users` FOREIGN KEY (`agencie_id`) REFERENCES `agencies` (`id`),
-  ADD CONSTRAINT `FK_Codes_Users` FOREIGN KEY (`code_id`) REFERENCES `codes` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Codes Model
  *
- * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\HasMany $Users
+ * @property |\Cake\ORM\Association\HasMany $Agencies
  *
  * @method \App\Model\Entity\Code get($primaryKey, $options = [])
  * @method \App\Model\Entity\Code newEntity($data = null, array $options = [])
@@ -36,12 +36,12 @@ class CodesTable extends Table
         parent::initialize($config);
 
         $this->setTable('codes');
-        $this->setDisplayField('id');
+        $this->setDisplayField('code_description');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
 
-        $this->hasMany('Users', [
+        $this->hasMany('Agencies', [
             'foreignKey' => 'code_id'
         ]);
     }

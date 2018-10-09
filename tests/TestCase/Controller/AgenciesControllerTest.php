@@ -17,6 +17,8 @@ class AgenciesControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.agencies',
+        'app.users',
+        'app.codes',
         'app.files',
         'app.tags',
         'app.agencies_files',

@@ -45,8 +45,8 @@ class CodesFixture extends TestFixture
             [
                 'id' => 1,
                 'code_description' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-10-04',
-                'modified' => '2018-10-04'
+                'created' => '2018-10-09',
+                'modified' => '2018-10-09'
             ],
         ];
         parent::init();

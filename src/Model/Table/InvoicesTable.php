@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Invoices Model
  *
- * @property |\Cake\ORM\Association\BelongsTo $Agencies
+ * @property \App\Model\Table\AgenciesTable|\Cake\ORM\Association\BelongsTo $Agencies
  * @property \App\Model\Table\StatusTable|\Cake\ORM\Association\BelongsTo $Status
  *
  * @method \App\Model\Entity\Invoice get($primaryKey, $options = [])

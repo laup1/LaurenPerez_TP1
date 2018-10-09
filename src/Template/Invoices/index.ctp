@@ -8,8 +8,8 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Invoice'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Agencies'), ['controller' => 'Agencies', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Agency'), ['controller' => 'Agencies', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Status'), ['controller' => 'Status', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Status'), ['controller' => 'Status', 'action' => 'add']) ?></li>
     </ul>
@@ -32,7 +32,7 @@
             <?php foreach ($invoices as $invoice): ?>
             <tr>
                 <td><?= $this->Number->format($invoice->id) ?></td>
-                <td><?= $this->Number->format($invoice->agencie_id) ?></td>
+                <td><?= $invoice->has('agency') ? $this->Html->link($invoice->agency->id, ['controller' => 'Agencies', 'action' => 'view', $invoice->agency->id]) : '' ?></td>
                 <td><?= $invoice->has('status') ? $this->Html->link($invoice->status->id, ['controller' => 'Status', 'action' => 'view', $invoice->status->id]) : '' ?></td>
                 <td><?= h($invoice->invoice_details) ?></td>
                 <td><?= h($invoice->created) ?></td>

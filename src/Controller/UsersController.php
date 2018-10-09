@@ -12,7 +12,56 @@ use App\Controller\AppController;
  */
 class UsersController extends AppController
 {
+   public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['logout', 'add']);
+    }
+    
+        public function isAuthorized($user) {        
+        
+        $action = $this->request->getParam('action');
+        // Droits par défaut
+        if (in_array($action, ['add', 'logout'])) {
+            return true;
+        }
 
+        $id = $this->request->getParam('pass.0');
+        if (!$id) {
+            return false;
+        }
+
+        if ($user['type'] === 'agencie') {
+            // Check that the article belongs to the current user.
+            $user1 = $this->Users->findById($id)->first();
+            if (in_array($action, ['view', 'add', 'edit', 'logout', 'login'])) {                
+            return $user1->id === $user['id'];
+            
+            }
+        
+            //return $student->user_id === $user['id'];
+        } else if ($user['type'] === 'admin'){
+            return true;
+       
+        }   
+
+    }
+    
+    
+    public function login() {
+        if ($this->request->is('post')) {
+            $user = $this->Auth->identify();
+            if ($user) {
+                $this->Auth->setUser($user);                
+                return $this->redirect($this->Auth->redirectUrl()); 
+                          
+            }
+            $this->Flash->error('Your username or password is incorrect.');
+        }
+    }
+
+    
+    
+    
     /**
      * Index method
      *
@@ -20,12 +69,10 @@ class UsersController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Agencies', 'Codes']
-        ];
         $users = $this->paginate($this->Users);
+          $user = $this->Auth->user();
 
-        $this->set(compact('users'));
+        $this->set(compact('users', 'user'));
     }
 
     /**
@@ -38,7 +85,7 @@ class UsersController extends AppController
     public function view($id = null)
     {
         $user = $this->Users->get($id, [
-            'contain' => ['Agencies', 'Codes', 'Invoices']
+            'contain' => ['Agencies']
         ]);
 
         $this->set('user', $user);
@@ -61,9 +108,15 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
-        $agencies = $this->Users->Agencies->find('list', ['limit' => 200]);
-        $codes = $this->Users->Codes->find('list', ['limit' => 200]);
-        $this->set(compact('user', 'agencies', 'codes'));
+        $this->set(compact('user'));
+    }
+    
+    
+   
+    
+     public function logout() {
+        $this->Flash->success('You are now logged out.');
+        return $this->redirect($this->Auth->logout());
     }
 
     /**
@@ -87,9 +140,7 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
-        $agencies = $this->Users->Agencies->find('list', ['limit' => 200]);
-        $codes = $this->Users->Codes->find('list', ['limit' => 200]);
-        $this->set(compact('user', 'agencies', 'codes'));
+        $this->set(compact('user'));
     }
 
     /**

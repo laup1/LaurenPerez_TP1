@@ -10,7 +10,11 @@ use Cake\ORM\Entity;
  * @property string $agencie_details
  * @property \Cake\I18n\FrozenDate $created
  * @property \Cake\I18n\FrozenDate $modified
+ * @property int $user_id
+ * @property int $code_id
  *
+ * @property \App\Model\Entity\User $user
+ * @property \App\Model\Entity\Code $code
  * @property \App\Model\Entity\File[] $files
  * @property \App\Model\Entity\Tag[] $tags
  */
@@ -30,6 +34,10 @@ class Agency extends Entity
         'agencie_details' => true,
         'created' => true,
         'modified' => true,
+        'user_id' => true,
+        'code_id' => true,
+        'user' => true,
+        'code' => true,
         'files' => true,
         'tags' => true
     ];

@@ -13,7 +13,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenDate $created
  * @property \Cake\I18n\FrozenDate $modified
  *
- * @property \App\Model\Entity\User $user
+ * @property \App\Model\Entity\Agency $agency
  * @property \App\Model\Entity\Status $status
  */
 class Invoice extends Entity
@@ -34,7 +34,7 @@ class Invoice extends Entity
         'invoice_details' => true,
         'created' => true,
         'modified' => true,
-        'user' => true,
+        'agency' => true,
         'status' => true
     ];
 }

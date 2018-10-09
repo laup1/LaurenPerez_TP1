@@ -11,6 +11,10 @@
         <li><?= $this->Form->postLink(__('Delete Agency'), ['action' => 'delete', $agency->id], ['confirm' => __('Are you sure you want to delete # {0}?', $agency->id)]) ?> </li>
         <li><?= $this->Html->link(__('List Agencies'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Agency'), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Codes'), ['controller' => 'Codes', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Code'), ['controller' => 'Codes', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Tags'), ['controller' => 'Tags', 'action' => 'index']) ?> </li>
@@ -23,6 +27,14 @@
         <tr>
             <th scope="row"><?= __('Agencie Details') ?></th>
             <td><?= h($agency->agencie_details) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('User') ?></th>
+            <td><?= $agency->has('user') ? $this->Html->link($agency->user->id, ['controller' => 'Users', 'action' => 'view', $agency->user->id]) : '' ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Code') ?></th>
+            <td><?= $agency->has('code') ? $this->Html->link($agency->code->id, ['controller' => 'Codes', 'action' => 'view', $agency->code->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>

@@ -14,8 +14,8 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('List Invoices'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Agencies'), ['controller' => 'Agencies', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Agency'), ['controller' => 'Agencies', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Status'), ['controller' => 'Status', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Status'), ['controller' => 'Status', 'action' => 'add']) ?></li>
     </ul>
@@ -25,7 +25,7 @@
     <fieldset>
         <legend><?= __('Edit Invoice') ?></legend>
         <?php
-            echo $this->Form->control('agencie_id');
+            echo $this->Form->control('agencie_id', ['options' => $agencies]);
             echo $this->Form->control('status_id', ['options' => $status]);
             echo $this->Form->control('invoice_details');
         ?>

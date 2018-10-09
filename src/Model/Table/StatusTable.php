@@ -36,7 +36,7 @@ class StatusTable extends Table
         parent::initialize($config);
 
         $this->setTable('status');
-        $this->setDisplayField('id');
+        $this->setDisplayField('description_Status');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');

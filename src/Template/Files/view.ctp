@@ -52,6 +52,8 @@
                 <th scope="col"><?= __('Agencie Details') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
+                <th scope="col"><?= __('User Id') ?></th>
+                <th scope="col"><?= __('Code Id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($file->agencies as $agencies): ?>
@@ -60,6 +62,8 @@
                 <td><?= h($agencies->agencie_details) ?></td>
                 <td><?= h($agencies->created) ?></td>
                 <td><?= h($agencies->modified) ?></td>
+                <td><?= h($agencies->user_id) ?></td>
+                <td><?= h($agencies->code_id) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'Agencies', 'action' => 'view', $agencies->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['controller' => 'Agencies', 'action' => 'edit', $agencies->id]) ?>

@@ -41,25 +41,23 @@
         <table cellpadding="0" cellspacing="0">
             <tr>
                 <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Agencie Id') ?></th>
-                <th scope="col"><?= __('Code Id') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
                 <th scope="col"><?= __('Username') ?></th>
                 <th scope="col"><?= __('Email') ?></th>
                 <th scope="col"><?= __('Password') ?></th>
+                <th scope="col"><?= __('Type') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($code->users as $users): ?>
             <tr>
                 <td><?= h($users->id) ?></td>
-                <td><?= h($users->agencie_id) ?></td>
-                <td><?= h($users->code_id) ?></td>
                 <td><?= h($users->created) ?></td>
                 <td><?= h($users->modified) ?></td>
                 <td><?= h($users->username) ?></td>
                 <td><?= h($users->email) ?></td>
                 <td><?= h($users->password) ?></td>
+                <td><?= h($users->type) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'Users', 'action' => 'view', $users->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['controller' => 'Users', 'action' => 'edit', $users->id]) ?>

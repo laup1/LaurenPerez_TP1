@@ -49,8 +49,8 @@ class StatusFixture extends TestFixture
             [
                 'id' => 1,
                 'description_Status' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-10-04',
-                'modified' => '2018-10-04'
+                'created' => '2018-10-09',
+                'modified' => '2018-10-09'
             ],
         ];
         parent::init();

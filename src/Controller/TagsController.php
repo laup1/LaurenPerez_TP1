@@ -12,7 +12,10 @@ use App\Controller\AppController;
  */
 class TagsController extends AppController
 {
-
+  public function isAuthorized($user) {
+        // All actions are allowed to logged in users for tags.
+        return true;
+    }
     /**
      * Index method
      *

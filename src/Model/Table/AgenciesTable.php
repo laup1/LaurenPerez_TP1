@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Agencies Model
  *
+ * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
+ * @property \App\Model\Table\CodesTable|\Cake\ORM\Association\BelongsTo $Codes
  * @property \App\Model\Table\FilesTable|\Cake\ORM\Association\BelongsToMany $Files
  * @property \App\Model\Table\TagsTable|\Cake\ORM\Association\BelongsToMany $Tags
  *
@@ -42,6 +44,14 @@ class AgenciesTable extends Table
 
         $this->addBehavior('Timestamp');
 
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('Codes', [
+            'foreignKey' => 'code_id',
+            'joinType' => 'INNER'
+        ]);
         $this->belongsToMany('Files', [
             'foreignKey' => 'agency_id',
             'targetForeignKey' => 'file_id',
@@ -73,5 +83,20 @@ class AgenciesTable extends Table
             ->notEmpty('agencie_details');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['user_id'], 'Users'));
+        $rules->add($rules->existsIn(['code_id'], 'Codes'));
+
+        return $rules;
     }
 }

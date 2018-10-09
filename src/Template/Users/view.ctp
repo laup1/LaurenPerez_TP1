@@ -13,23 +13,11 @@
         <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Agencies'), ['controller' => 'Agencies', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Agency'), ['controller' => 'Agencies', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Codes'), ['controller' => 'Codes', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Code'), ['controller' => 'Codes', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Invoices'), ['controller' => 'Invoices', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Invoice'), ['controller' => 'Invoices', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="users view large-9 medium-8 columns content">
     <h3><?= h($user->id) ?></h3>
     <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Agency') ?></th>
-            <td><?= $user->has('agency') ? $this->Html->link($user->agency->id, ['controller' => 'Agencies', 'action' => 'view', $user->agency->id]) : '' ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Code') ?></th>
-            <td><?= $user->has('code') ? $this->Html->link($user->code->id, ['controller' => 'Codes', 'action' => 'view', $user->code->id]) : '' ?></td>
-        </tr>
         <tr>
             <th scope="row"><?= __('Username') ?></th>
             <td><?= h($user->username) ?></td>
@@ -41,6 +29,10 @@
         <tr>
             <th scope="row"><?= __('Password') ?></th>
             <td><?= h($user->password) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Type') ?></th>
+            <td><?= h($user->type) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>
@@ -56,30 +48,30 @@
         </tr>
     </table>
     <div class="related">
-        <h4><?= __('Related Invoices') ?></h4>
-        <?php if (!empty($user->invoices)): ?>
+        <h4><?= __('Related Agencies') ?></h4>
+        <?php if (!empty($user->agencies)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
                 <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Agencie Id') ?></th>
-                <th scope="col"><?= __('Status Id') ?></th>
-                <th scope="col"><?= __('Invoice Details') ?></th>
+                <th scope="col"><?= __('Agencie Details') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
+                <th scope="col"><?= __('User Id') ?></th>
+                <th scope="col"><?= __('Code Id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
-            <?php foreach ($user->invoices as $invoices): ?>
+            <?php foreach ($user->agencies as $agencies): ?>
             <tr>
-                <td><?= h($invoices->id) ?></td>
-                <td><?= h($invoices->agencie_id) ?></td>
-                <td><?= h($invoices->status_id) ?></td>
-                <td><?= h($invoices->invoice_details) ?></td>
-                <td><?= h($invoices->created) ?></td>
-                <td><?= h($invoices->modified) ?></td>
+                <td><?= h($agencies->id) ?></td>
+                <td><?= h($agencies->agencie_details) ?></td>
+                <td><?= h($agencies->created) ?></td>
+                <td><?= h($agencies->modified) ?></td>
+                <td><?= h($agencies->user_id) ?></td>
+                <td><?= h($agencies->code_id) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Invoices', 'action' => 'view', $invoices->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Invoices', 'action' => 'edit', $invoices->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Invoices', 'action' => 'delete', $invoices->id], ['confirm' => __('Are you sure you want to delete # {0}?', $invoices->id)]) ?>
+                    <?= $this->Html->link(__('View'), ['controller' => 'Agencies', 'action' => 'view', $agencies->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['controller' => 'Agencies', 'action' => 'edit', $agencies->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Agencies', 'action' => 'delete', $agencies->id], ['confirm' => __('Are you sure you want to delete # {0}?', $agencies->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

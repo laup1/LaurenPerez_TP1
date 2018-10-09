@@ -9,8 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Users Model
  *
- * @property \App\Model\Table\AgenciesTable|\Cake\ORM\Association\BelongsTo $Agencies
- * @property \App\Model\Table\CodesTable|\Cake\ORM\Association\BelongsTo $Codes
+ * @property \App\Model\Table\AgenciesTable|\Cake\ORM\Association\HasMany $Agencies
  *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])
  * @method \App\Model\Entity\User newEntity($data = null, array $options = [])
@@ -37,18 +36,13 @@ class UsersTable extends Table
         parent::initialize($config);
 
         $this->setTable('users');
-        $this->setDisplayField('id');
+        $this->setDisplayField('username');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('Agencies', [
-            'foreignKey' => 'agencie_id',
-            'joinType' => 'INNER'
-        ]);
-        $this->belongsTo('Codes', [
-            'foreignKey' => 'code_id',
-            'joinType' => 'INNER'
+        $this->hasMany('Agencies', [
+            'foreignKey' => 'user_id'
         ]);
     }
 
@@ -81,6 +75,12 @@ class UsersTable extends Table
             ->requirePresence('password', 'create')
             ->notEmpty('password');
 
+        $validator
+            ->scalar('type')
+            ->maxLength('type', 255)
+            ->requirePresence('type', 'create')
+            ->notEmpty('type');
+
         return $validator;
     }
 
@@ -95,8 +95,6 @@ class UsersTable extends Table
     {
         $rules->add($rules->isUnique(['username']));
         $rules->add($rules->isUnique(['email']));
-        $rules->add($rules->existsIn(['agencie_id'], 'Agencies'));
-        $rules->add($rules->existsIn(['code_id'], 'Codes'));
 
         return $rules;
     }

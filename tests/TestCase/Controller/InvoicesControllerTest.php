@@ -17,7 +17,7 @@ class InvoicesControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.invoices',
-        'app.users',
+        'app.agencies',
         'app.status'
     ];
 

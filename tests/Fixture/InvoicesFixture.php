@@ -24,8 +24,8 @@ class InvoicesFixture extends TestFixture
         'created' => ['type' => 'date', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'date', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         '_indexes' => [
-            'user_id' => ['type' => 'index', 'columns' => ['agencie_id'], 'length' => []],
             'status_id' => ['type' => 'index', 'columns' => ['status_id'], 'length' => []],
+            'agency_id' => ['type' => 'index', 'columns' => ['agencie_id'], 'length' => []],
         ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
@@ -52,8 +52,8 @@ class InvoicesFixture extends TestFixture
                 'agencie_id' => 1,
                 'status_id' => 1,
                 'invoice_details' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-10-04',
-                'modified' => '2018-10-04'
+                'created' => '2018-10-09',
+                'modified' => '2018-10-09'
             ],
         ];
         parent::init();

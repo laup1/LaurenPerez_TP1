@@ -12,7 +12,18 @@ use App\Controller\AppController;
  */
 class InvoicesController extends AppController
 {
-
+ public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['add']);
+    }
+    
+      public function isAuthorized($user) {
+        $action = $this->request->getParam('action');
+        // The edit and delete actions are allowed to logged in users for comments.
+        if (in_array($action, ['edit', 'delete'])) {
+            return true;
+        }
+    }
     /**
      * Index method
      *
@@ -21,7 +32,7 @@ class InvoicesController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Users', 'Status']
+            'contain' => ['Agencies', 'Status']
         ];
         $invoices = $this->paginate($this->Invoices);
 
@@ -38,7 +49,7 @@ class InvoicesController extends AppController
     public function view($id = null)
     {
         $invoice = $this->Invoices->get($id, [
-            'contain' => ['Users', 'Status']
+            'contain' => ['Agencies', 'Status']
         ]);
 
         $this->set('invoice', $invoice);
@@ -61,9 +72,10 @@ class InvoicesController extends AppController
             }
             $this->Flash->error(__('The invoice could not be saved. Please, try again.'));
         }
-        $users = $this->Invoices->Users->find('list', ['limit' => 200]);
+        $agencies = $this->Invoices->Agencies->find('list', ['limit' => 200]);
         $status = $this->Invoices->Status->find('list', ['limit' => 200]);
-        $this->set(compact('invoice', 'users', 'status'));
+          $user = $this->Auth->user();
+        $this->set(compact('invoice', 'agencies', 'status','user'));
     }
 
     /**
@@ -87,9 +99,10 @@ class InvoicesController extends AppController
             }
             $this->Flash->error(__('The invoice could not be saved. Please, try again.'));
         }
-        $users = $this->Invoices->Users->find('list', ['limit' => 200]);
+        $agencies = $this->Invoices->Agencies->find('list', ['limit' => 200]);
         $status = $this->Invoices->Status->find('list', ['limit' => 200]);
-        $this->set(compact('invoice', 'users', 'status'));
+          $user = $this->Auth->user();
+        $this->set(compact('invoice', 'agencies', 'status', 'user'));
     }
 
     /**
