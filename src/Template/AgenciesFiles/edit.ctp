@@ -12,20 +12,13 @@
                 ['action' => 'delete', $agenciesFile->id],
                 ['confirm' => __('Are you sure you want to delete # {0}?', $agenciesFile->id)]
             )
-        ?></li>
-        <li><?= $this->Html->link(__('List Agencies Files'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Agencies'), ['controller' => 'Agencies', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Agency'), ['controller' => 'Agencies', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+        ?>
 <div class="agenciesFiles form large-9 medium-8 columns content">
     <?= $this->Form->create($agenciesFile) ?>
     <fieldset>
         <legend><?= __('Edit Agencies File') ?></legend>
         <?php
-            echo $this->Form->control('agencie_id', ['options' => $agencies]);
+            echo $this->Form->control('agencie_id', ['value' => $employer]);
             echo $this->Form->control('file_id', ['options' => $files]);
         ?>
     </fieldset>

@@ -28,7 +28,7 @@ class AgenciesFile extends Entity
     protected $_accessible = [
         'agencie_id' => true,
         'file_id' => true,
-        'agency' => true,
+        'agencie' => true,
         'file' => true
     ];
 }

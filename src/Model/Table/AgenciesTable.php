@@ -53,12 +53,12 @@ class AgenciesTable extends Table
             'joinType' => 'INNER'
         ]);
         $this->belongsToMany('Files', [
-            'foreignKey' => 'agency_id',
+            'foreignKey' => 'agencie_id',
             'targetForeignKey' => 'file_id',
             'joinTable' => 'agencies_files'
         ]);
         $this->belongsToMany('Tags', [
-            'foreignKey' => 'agency_id',
+            'foreignKey' => 'agencie_id',
             'targetForeignKey' => 'tag_id',
             'joinTable' => 'agencies_tags'
         ]);

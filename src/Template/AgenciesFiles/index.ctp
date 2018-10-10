@@ -4,33 +4,24 @@
  * @var \App\Model\Entity\AgenciesFile[]|\Cake\Collection\CollectionInterface $agenciesFiles
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Agencies File'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Agencies'), ['controller' => 'Agencies', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Agency'), ['controller' => 'Agencies', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+
 <div class="agenciesFiles index large-9 medium-8 columns content">
     <h3><?= __('Agencies Files') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('agencie_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('file_id') ?></th>
+                <th scope="col" style="visibility: hidden"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col" style="visibility: hidden"><?= $this->Paginator->sort('agencie_id') ?></th>
+                <th scope="col" style="visibility: hidden"><?= $this->Paginator->sort('file_id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($agenciesFiles as $agenciesFile): ?>
             <tr>
-                <td><?= $this->Number->format($agenciesFile->id) ?></td>
-                <td><?= $agenciesFile->has('agency') ? $this->Html->link($agenciesFile->agency->id, ['controller' => 'Agencies', 'action' => 'view', $agenciesFile->agency->id]) : '' ?></td>
-                <td><?= $agenciesFile->has('file') ? $this->Html->link($agenciesFile->file->name, ['controller' => 'Files', 'action' => 'view', $agenciesFile->file->id]) : '' ?></td>
+                <td style="visibility: hidden"><?= $this->Number->format($agenciesFile->id) ?></td>
+                <td style="visibility: hidden"><?= $agenciesFile->has('agency') ? $this->Html->link($agenciesFile->agency->id, ['controller' => 'Agencies', 'action' => 'view', $agenciesFile->agency->id]) : '' ?></td>
+                <td style="visibility: hidden"><?= $agenciesFile->has('file') ? $this->Html->link($agenciesFile->file->name, ['controller' => 'Files', 'action' => 'view', $agenciesFile->file->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $agenciesFile->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $agenciesFile->id]) ?>

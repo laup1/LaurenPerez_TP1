@@ -4,22 +4,13 @@
  * @var \App\Model\Entity\Invoice[]|\Cake\Collection\CollectionInterface $invoices
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Invoice'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Agencies'), ['controller' => 'Agencies', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Agency'), ['controller' => 'Agencies', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Status'), ['controller' => 'Status', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Status'), ['controller' => 'Status', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+
 <div class="invoices index large-9 medium-8 columns content">
     <h3><?= __('Invoices') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"  style="visibility: hidden"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('agencie_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('status_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('invoice_details') ?></th>
@@ -31,7 +22,7 @@
         <tbody>
             <?php foreach ($invoices as $invoice): ?>
             <tr>
-                <td><?= $this->Number->format($invoice->id) ?></td>
+                <td  style="visibility: hidden"><?= $this->Number->format($invoice->id) ?></td>
                 <td><?= $invoice->has('agency') ? $this->Html->link($invoice->agency->id, ['controller' => 'Agencies', 'action' => 'view', $invoice->agency->id]) : '' ?></td>
                 <td><?= $invoice->has('status') ? $this->Html->link($invoice->status->id, ['controller' => 'Status', 'action' => 'view', $invoice->status->id]) : '' ?></td>
                 <td><?= h($invoice->invoice_details) ?></td>

@@ -75,7 +75,8 @@ class InvoicesController extends AppController
         $agencies = $this->Invoices->Agencies->find('list', ['limit' => 200]);
         $status = $this->Invoices->Status->find('list', ['limit' => 200]);
           $user = $this->Auth->user();
-        $this->set(compact('invoice', 'agencies', 'status','user'));
+           $agencie = $this->Invoices->Agencies->findByUser_id($user['id']);
+        $this->set(compact('invoice', 'agencies', 'status','user', 'agencie'));
     }
 
     /**
@@ -101,8 +102,9 @@ class InvoicesController extends AppController
         }
         $agencies = $this->Invoices->Agencies->find('list', ['limit' => 200]);
         $status = $this->Invoices->Status->find('list', ['limit' => 200]);
-          $user = $this->Auth->user();
-        $this->set(compact('invoice', 'agencies', 'status', 'user'));
+         $user = $this->Auth->user();
+           $agencie = $this->Invoices->Agencies->findByUser_id($user['id']);
+        $this->set(compact('invoice', 'agencies', 'status', 'user', 'agencie'));
     }
 
     /**

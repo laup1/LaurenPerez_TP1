@@ -43,7 +43,7 @@ class FilesTable extends Table
 
         $this->belongsToMany('Agencies', [
             'foreignKey' => 'file_id',
-            'targetForeignKey' => 'agency_id',
+            'targetForeignKey' => 'agencie_id',
             'joinTable' => 'agencies_files'
         ]);
     }
@@ -60,7 +60,7 @@ class FilesTable extends Table
             ->integer('id')
             ->allowEmpty('id', 'create');
 
-        $validator
+ /*       $validator
             ->scalar('name')
             ->maxLength('name', 255)
             ->requirePresence('name', 'create')
@@ -71,7 +71,7 @@ class FilesTable extends Table
             ->maxLength('path', 255)
             ->requirePresence('path', 'create')
             ->notEmpty('path');
-
+*/
         $validator
             ->boolean('status')
             ->requirePresence('status', 'create')

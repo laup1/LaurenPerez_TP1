@@ -4,20 +4,13 @@
  * @var \App\Model\Entity\Tag[]|\Cake\Collection\CollectionInterface $tags
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Tag'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Agencies'), ['controller' => 'Agencies', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Agency'), ['controller' => 'Agencies', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+
 <div class="tags index large-9 medium-8 columns content">
     <h3><?= __('Tags') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"  style="visibility: hidden"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('title') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
@@ -27,7 +20,7 @@
         <tbody>
             <?php foreach ($tags as $tag): ?>
             <tr>
-                <td><?= $this->Number->format($tag->id) ?></td>
+                <td  style="visibility: hidden"><?= $this->Number->format($tag->id) ?></td>
                 <td><?= h($tag->title) ?></td>
                 <td><?= h($tag->created) ?></td>
                 <td><?= h($tag->modified) ?></td>

@@ -4,21 +4,14 @@
  * @var \App\Model\Entity\AgenciesTag[]|\Cake\Collection\CollectionInterface $agenciesTags
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Agencies Tag'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Tags'), ['controller' => 'Tags', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Tag'), ['controller' => 'Tags', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+
 <div class="agenciesTags index large-9 medium-8 columns content">
     <h3><?= __('Agencies Tags') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('agencie_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('tag_id') ?></th>
+                <th scope="col"  style="visibility: hidden"><?= $this->Paginator->sort('agencie_id') ?></th>
+                <th scope="col"  style="visibility: hidden"><?= $this->Paginator->sort('tag_id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>

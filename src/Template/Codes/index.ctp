@@ -4,20 +4,13 @@
  * @var \App\Model\Entity\Code[]|\Cake\Collection\CollectionInterface $codes
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Code'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+
 <div class="codes index large-9 medium-8 columns content">
     <h3><?= __('Codes') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"  style="visibility: hidden"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('code_description') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
@@ -27,7 +20,7 @@
         <tbody>
             <?php foreach ($codes as $code): ?>
             <tr>
-                <td><?= $this->Number->format($code->id) ?></td>
+                <td  style="visibility: hidden"><?= $this->Number->format($code->id) ?></td>
                 <td><?= h($code->code_description) ?></td>
                 <td><?= h($code->created) ?></td>
                 <td><?= h($code->modified) ?></td>

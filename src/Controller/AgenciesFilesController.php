@@ -62,8 +62,10 @@ class AgenciesFilesController extends AppController
             $this->Flash->error(__('The agencies file could not be saved. Please, try again.'));
         }
         $agencies = $this->AgenciesFiles->Agencies->find('list', ['limit' => 200]);
+         $user = $this->Auth->user();
+           $agencie = $this->Invoices->Agencies->findByUser_id($user['id']);
         $files = $this->AgenciesFiles->Files->find('list', ['limit' => 200]);
-        $this->set(compact('agenciesFile', 'agencies', 'files'));
+        $this->set(compact('agenciesFile', 'agencies', 'files', 'agencie'));
     }
 
     /**
@@ -89,7 +91,9 @@ class AgenciesFilesController extends AppController
         }
         $agencies = $this->AgenciesFiles->Agencies->find('list', ['limit' => 200]);
         $files = $this->AgenciesFiles->Files->find('list', ['limit' => 200]);
-        $this->set(compact('agenciesFile', 'agencies', 'files'));
+         $user = $this->Auth->user();
+           $agencie = $this->Invoices->Agencies->findByUser_id($user['id']);
+        $this->set(compact('agenciesFile', 'agencies', 'files', 'agencie'));
     }
 
     /**

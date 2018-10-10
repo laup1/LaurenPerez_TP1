@@ -39,18 +39,28 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <li class="name">
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
             </li>
-        </ul>
+        </ul>        
         <div class="top-bar-section">
             <ul class="right">
                 
                  <li>
+                    <?php
+                     $loguser = $this->request->getSession()->read('Auth.User');
+                      if ($loguser) {
+                      $user = $loguser['username'];
+                      $role = $loguser['type'];
+                      echo $this->Html->link($role .' '. $user . ' logout', ['controller' => 'Users', 'action' => 'logout']);
+                             
+                      } else {
+                         echo $this->Html->link('login', ['controller' => 'Users', 'action' => 'login']);                           
+                      }
+                        ?>
+                    </li>
+                     <li>
                         <?php
                         $loguser = $this->request->getSession()->read('Auth.User');
-                        if ($loguser) {
-                            $user = $loguser['email'];
-                            echo $this->Html->link($user . ' logout', ['controller' => 'Users', 'action' => 'logout']);
-                        } else {
-                            echo $this->Html->link('login', ['controller' => 'Users', 'action' => 'login']);
+                        if (!$loguser) {                         
+                            echo $this->Html->link('new user', ['controller' => 'Users', 'action' => 'add']);
                         }
                         ?>
                     </li>
@@ -69,6 +79,59 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </ul>
         </div>
     </nav>
+    
+    <nav class="large-3 medium-4 columns" id="actions-sidebar">
+    <ul class="side-nav">
+        <li class="heading"><?= __('Actions') ?></li>    
+      <li><?= $this->Html->link(__('List Agencies'), ['controller' => 'Agencies', 'action' => 'index']) ?></li>
+      <li><?= $this->Html->link(__('List Invoices'), ['controller' => 'Invoices', 'action' => 'index']) ?></li>
+      <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>      
+       <li><?= $this->Html->link(__('List Codes'), ['controller' => 'Codes', 'action' => 'index']) ?></li>            
+        <li><?= $this->Html->link(__('List Tags'), ['controller' => 'Tags', 'action' => 'index']) ?></li>       
+         <li><?= $this->Html->link(__('List Status'), ['controller' => 'Status', 'action' => 'index']) ?></li>       
+         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
+      <li>
+            <?php
+              $loguser = $this->request->getSession()->read('Auth.User');             
+               if ($loguser)                      
+              echo $this->Html->link(__('New Agency'), ['controller' => 'Agencies', 'action' => 'add'])
+               
+             ?>
+      </li>
+      <li>  <?php
+              $loguser = $this->request->getSession()->read('Auth.User');             
+               if ($loguser)                 
+              echo $this->Html->link(__('New Tag'), ['controller' => 'Tags', 'action' => 'add']) ?>
+       </li>   
+       <li>  <?php
+              $loguser = $this->request->getSession()->read('Auth.User');             
+               if ($loguser)             
+              echo $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add'])  ?> 
+       </li>
+         <li>  <?php
+              $loguser = $this->request->getSession()->read('Auth.User');             
+               if ($loguser)                
+              echo $this->Html->link(__('New Invoice'), ['controller' => 'Invoices', 'action' => 'add']) ?>
+       </li
+         <li>  <?php
+              $loguser = $this->request->getSession()->read('Auth.User');             
+               if ($loguser['type'] === 'admin')               
+              echo $this->Html->link(__('New Status'), ['controller' => 'Status', 'action' => 'add'])?>
+       </li>
+        <li>  <?php
+              $loguser = $this->request->getSession()->read('Auth.User');             
+               if ($loguser['type'] === 'admin')                 
+              echo  $this->Html->link(__('New Code'), ['controller' => 'Codes', 'action' => 'add']) ?>
+       </li>
+            
+       
+       
+    </ul>
+        
+       
+    
+       
+</nav>
     <?= $this->Flash->render() ?>
     <div class="container clearfix">
         <?= $this->fetch('content') ?>

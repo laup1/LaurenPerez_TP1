@@ -4,20 +4,13 @@
  * @var \App\Model\Entity\Status[]|\Cake\Collection\CollectionInterface $status
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Status'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Invoices'), ['controller' => 'Invoices', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Invoice'), ['controller' => 'Invoices', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+
 <div class="status index large-9 medium-8 columns content">
     <h3><?= __('Status') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"  style="visibility: hidden"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('description_Status') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
@@ -27,7 +20,7 @@
         <tbody>
             <?php foreach ($status as $status): ?>
             <tr>
-                <td><?= $this->Number->format($status->id) ?></td>
+                <td  style="visibility: hidden"><?= $this->Number->format($status->id) ?></td>
                 <td><?= h($status->description_Status) ?></td>
                 <td><?= h($status->created) ?></td>
                 <td><?= h($status->modified) ?></td>
