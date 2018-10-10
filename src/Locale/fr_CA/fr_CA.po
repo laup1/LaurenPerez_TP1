@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2018-10-10 18:41+0000\n"
-"PO-Revision-Date: 2018-10-10 15:05-0400\n"
+"PO-Revision-Date: 2018-10-10 16:00-0400\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -394,51 +394,53 @@ msgstr ""
 
 #: Template/AgenciesFiles/add.ctp:11
 msgid "Add Agencies File"
-msgstr ""
+msgstr "L'agence a été sauvée."
 
 #: Template/AgenciesFiles/edit.ctp:19
 msgid "Edit Agencies File"
-msgstr ""
+msgstr "Editer l'agence"
 
 #: Template/AgenciesFiles/index.ctp:9
 msgid "Agencies Files"
-msgstr ""
+msgstr "Agences"
 
 #: Template/AgenciesFiles/view.ctp:12 Template/Invoices/view.ctp:12
 msgid "Agency"
-msgstr ""
+msgstr "L'agence a été supprimée."
 
 #: Template/AgenciesFiles/view.ctp:16
 msgid "File"
-msgstr ""
+msgstr "Le fichier des agences a été sauvegardé."
 
 #: Template/AgenciesTags/add.ctp:11
 msgid "Add Agencies Tag"
-msgstr ""
+msgstr "L'étiquette des agences a été sauvegardée."
 
 #: Template/AgenciesTags/edit.ctp:11
 msgid "Edit Agencies Tag"
-msgstr ""
+msgstr "Editer l'agence"
 
 #: Template/AgenciesTags/index.ctp:9
 msgid "Agencies Tags"
-msgstr ""
+msgstr "Agences"
 
 #: Template/AgenciesTags/view.ctp:12
 msgid "Tag"
 msgstr ""
+"L'étiquette des agences n'a pas pu être sauvegardée. S'Ll vous plaît, "
+"essayez encore."
 
 #: Template/AgenciesTags/view.ctp:16 Template/Status/view.ctp:34
 msgid "Agencie Id"
-msgstr ""
+msgstr "Agencie détails"
 
 #: Template/Codes/add.ctp:11
 msgid "Add Code"
-msgstr ""
+msgstr "L'agence a été sauvée."
 
 #: Template/Codes/edit.ctp:11
 msgid "Edit Code"
-msgstr ""
+msgstr "Modifier"
 
 #: Template/Codes/index.ctp:9
 msgid "Codes"
