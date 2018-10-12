@@ -15,7 +15,7 @@ class UsersController extends AppController
 {
    public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['logout', 'add', 'aPropos']);
+        $this->Auth->allow(['logout', 'add', 'menu']);
     }
     
         public function isAuthorized($user) {        
@@ -105,7 +105,7 @@ class UsersController extends AppController
             $user = $this->Users->patchEntity($user, $this->request->getData());
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
-                    //return $this->redirect( ['controller' => 'Emails', 'action' => 'index']);
+                  //  return $this->redirect( ['controller' => 'Emails', 'action' => 'index']);
 
                 return $this->redirect(['action' => 'index']);
              
@@ -170,9 +170,9 @@ class UsersController extends AppController
         return $this->redirect(['action' => 'index']);
     }
     
-    public function aPropos() {       
+    public function menu() {       
                           
-        return $this->redirect('\src\Template\Users\aPropos.php'); 
+       // return $this->redirect('\src\Template\Users\aPropos.php'); 
                    //return $this->redirect(['/Users/aPropos.php']);
               
                           

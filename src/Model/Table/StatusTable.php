@@ -64,7 +64,15 @@ class StatusTable extends Table
             ->maxLength('description_Status', 255)
             ->requirePresence('description_Status', 'create')
             ->notEmpty('description_Status');
+         
 
         return $validator;
+    }
+    
+       public function buildRules(RulesChecker $rules)
+    {
+         $rules->add($rules->isUnique(['description_Status']));
+
+        return $rules;
     }
 }

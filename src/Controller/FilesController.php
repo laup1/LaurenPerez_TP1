@@ -75,7 +75,8 @@ public function isAuthorized($user) {
                 $this->Flash->error(__('Please choose a file to upload.'));
             }
         }
-        $this->set(compact('file'));
+        $agencies = $this->Files->Agencies->find('list', ['limit' => 200]);
+        $this->set(compact('file', 'agencies'));
     }
 
 

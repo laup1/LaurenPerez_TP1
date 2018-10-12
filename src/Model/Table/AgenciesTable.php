@@ -40,7 +40,7 @@ class AgenciesTable extends Table
        
 
         $this->setTable('agencies');
-        $this->setDisplayField('id');
+        $this->setDisplayField('agencie_details');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');

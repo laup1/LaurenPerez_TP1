@@ -194,20 +194,27 @@ return [
      * appropriate file to src/Mailer/Transport. Transports should be named
      * 'YourTransport.php', where 'Your' is the name of the transport.
      */
-    'EmailTransport' => [
+      'EmailTransport' => [
         'default' => [
-            'className' => 'Cake\Mailer\Transport\MailTransport',
+            'className' => 'Mail',
             /*
              * The following keys are used in SMTP transports:
              */
             'host' => 'localhost',
             'port' => 25,
             'timeout' => 30,
-            'username' => null,
-            'password' => null,
+            'username' => 'user',
+            'password' => 'secret',
             'client' => null,
             'tls' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+        ],
+        'gmail'  => [
+            'host'  => 'ssl://smtp.gmail.com',
+            'port'  => 465,
+            'username'  => 'laurentperez360@gmail.com',
+            'password'  =>  'ixccqboaodazktqo',
+            'className'  => 'Smtp'
         ],
     ],
 

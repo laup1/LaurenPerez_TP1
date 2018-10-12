@@ -37,7 +37,7 @@ class InvoicesTable extends Table
         parent::initialize($config);
          $this->addBehavior('Translate', ['fields' => ['invoice_details']]);
         $this->setTable('invoices');
-        $this->setDisplayField('id');
+        $this->setDisplayField('invoice_details');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');

@@ -65,7 +65,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         ?>
                     </li>
                     <li>
-                        <?php echo $this->Html->link('À propos', ['controller' => 'Users', 'action' => 'aPropos']);   ?>      
+                        <?php echo $this->Html->link('À propos', ['controller' => 'Users', 'action' => 'menu']);   ?>      
                         
                     </li>
                    
@@ -104,11 +104,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                
              ?>
       </li>
-      <li>  <?php
-              $loguser = $this->request->getSession()->read('Auth.User');             
-               if ($loguser)                 
-              echo $this->Html->link(__('New Tag'), ['controller' => 'Tags', 'action' => 'add']) ?>
-       </li>  
+      <?php
+              //$loguser = $this->request->getSession()->read('Auth.User');             
+               //if ($loguser)                 
+              //echo $this->Html->link(__('New Tag'), ['controller' => 'Tags', 'action' => 'add']) ?>
+       
        
         <li>  <?php
               $loguser = $this->request->getSession()->read('Auth.User');             

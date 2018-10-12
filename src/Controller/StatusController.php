@@ -13,6 +13,34 @@ use Cake\I18n\I18n;
  */
 class StatusController extends AppController
 {
+      public function isAuthorized($user) {
+        $action = $this->request->getParam('action');
+        // The add and tags actions are always allowed to logged in users.
+        if (in_array($action, ['add'])) {
+            return true;
+        }
+
+        // All other actions require a slug.
+        $id = $this->request->getParam('pass.0');
+        if (!$id) {
+            return false;
+        }
+        if ($user['type'] === 'agencie'){            
+         // Check that the article belongs to the current user.
+        $agencie = $this->Agencies->findById($id)->first();
+
+        return $agencie->user_id === $user['id'];
+            
+        }
+        
+         if ($user['type'] === 'admin'){
+            return true;
+       
+        } 
+        
+
+      
+    }
 
     /**
      * Index method
@@ -70,7 +98,9 @@ class StatusController extends AppController
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The status could not be saved. Please, try again.'));
+            
         }
+        
         $this->set(compact('status'));
     }
 
