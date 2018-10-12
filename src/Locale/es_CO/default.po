@@ -1,0 +1,946 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-10-10 18:41+0000\n"
+"PO-Revision-Date: 2018-10-10 20:23-0800\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Language: es_CO\n"
+
+#: Controller/AgenciesController.php:87;116
+msgid "The agency has been saved."
+msgstr "la agencia fue guardada"
+
+#: Controller/AgenciesController.php:91;120
+msgid "The agency could not be saved. Please, try again."
+msgstr "la agencia no fue gausrdada.por favor intenta de nuevo"
+
+#: Controller/AgenciesController.php:142
+msgid "The agency has been deleted."
+msgstr "la agencia fue borrada"
+
+#: Controller/AgenciesController.php:144
+msgid "The agency could not be deleted. Please, try again."
+msgstr "la agencia no pudo ser eliminada. por favor intenta mas tarde"
+
+#: Controller/AgenciesFilesController.php:58;86
+msgid "The agencies file has been saved."
+msgstr "la agencia fue guardada"
+
+#: Controller/AgenciesFilesController.php:62;90
+msgid "The agencies file could not be saved. Please, try again."
+msgstr "la agencia no pudo ser guardada. intenta de nuevo"
+
+#: Controller/AgenciesFilesController.php:111
+msgid "The agencies file has been deleted."
+msgstr "El archivo fue borrado"
+
+#: Controller/AgenciesFilesController.php:113
+msgid "The agencies file could not be deleted. Please, try again."
+msgstr "el archivo no puede ser eliminado"
+
+#: Controller/AgenciesTagsController.php:58;83
+msgid "The agencies tag has been saved."
+msgstr "la etiqueta fue guardada"
+
+#: Controller/AgenciesTagsController.php:62;87
+msgid "The agencies tag could not be saved. Please, try again."
+msgstr "la etiqueta no pudio ser guardada"
+
+#: Controller/AgenciesTagsController.php:105
+msgid "The agencies tag has been deleted."
+msgstr "la etiqueta fue eliminada"
+
+#: Controller/AgenciesTagsController.php:107
+msgid "The agencies tag could not be deleted. Please, try again."
+msgstr "la etiqueta no pudo ser eliminada "
+
+#: Controller/CodesController.php:55;79
+msgid "The code has been saved."
+msgstr "codigo guardado"
+
+#: Controller/CodesController.php:59;83
+msgid "The code could not be saved. Please, try again."
+msgstr "el codigo no puede ser guardado"
+
+#: Controller/CodesController.php:100
+msgid "The code has been deleted."
+msgstr "codigo eliminado"
+
+#: Controller/CodesController.php:102
+msgid "The code could not be deleted. Please, try again."
+msgstr "el ccodigo no pudo ser eliminado"
+
+#: Controller/FilesController.php:67
+msgid "File has been uploaded and inserted successfully."
+msgstr "el archivo fue insertado con succeso"
+
+#: Controller/FilesController.php:69
+msgid "Unable to upload file, please try again."
+msgstr "imposible de agregar el archivo"
+
+#: Controller/FilesController.php:72
+msgid "Unable to save file, please try again."
+msgstr "imposible de guardar el archivo"
+
+#: Controller/FilesController.php:75
+msgid "Please choose a file to upload."
+msgstr "por favor elija un archivo a adjuntar"
+
+#: Controller/FilesController.php:96
+msgid "The file has been saved."
+msgstr "el archivo fue guardado"
+
+#: Controller/FilesController.php:100
+msgid "The file could not be saved. Please, try again."
+msgstr "el archivo no pudo ser guardado"
+
+#: Controller/FilesController.php:116
+msgid "The file has been deleted."
+msgstr "archivo eliminado"
+
+#: Controller/FilesController.php:118
+msgid "The file could not be deleted. Please, try again."
+msgstr "el archivo no puede ser eliminado"
+
+#: Controller/I18nController.php:55;79
+msgid "The i18n has been saved."
+msgstr ""
+
+#: Controller/I18nController.php:59;83
+msgid "The i18n could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/I18nController.php:100
+msgid "The i18n has been deleted."
+msgstr ""
+
+#: Controller/I18nController.php:102
+msgid "The i18n could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/InvoicesController.php:69;97
+msgid "The invoice has been saved."
+msgstr "la factura fue guardada"
+
+#: Controller/InvoicesController.php:73;101
+msgid "The invoice could not be saved. Please, try again."
+msgstr "la factura no pudo ser guardada"
+
+#: Controller/InvoicesController.php:122
+msgid "The invoice has been deleted."
+msgstr "la factura fue eliminada"
+
+#: Controller/InvoicesController.php:124
+msgid "The invoice could not be deleted. Please, try again."
+msgstr "la factura no pudo ser eliminada"
+
+#: Controller/StatusController.php:55;79
+msgid "The status has been saved."
+msgstr "el estatus fue guardado"
+
+#: Controller/StatusController.php:59;83
+msgid "The status could not be saved. Please, try again."
+msgstr "el estatus no pudo ser guardado"
+
+#: Controller/StatusController.php:100
+msgid "The status has been deleted."
+msgstr "estatus eliminado"
+
+#: Controller/StatusController.php:102
+msgid "The status could not be deleted. Please, try again."
+msgstr "el estatus no pudo ser eliminado"
+
+#: Controller/TagsController.php:58;83
+msgid "The tag has been saved."
+msgstr "la etiqueta fue guardada"
+
+#: Controller/TagsController.php:62;87
+msgid "The tag could not be saved. Please, try again."
+msgstr "la etiqueta no pudo ser gurdada"
+
+#: Controller/TagsController.php:105
+msgid "The tag has been deleted."
+msgstr "la etiqueta fue borrada"
+
+#: Controller/TagsController.php:107
+msgid "The tag could not be deleted. Please, try again."
+msgstr "la etiqueta no puede ser eliminada"
+
+#: Controller/UsersController.php:105;137
+msgid "The user has been saved."
+msgstr "el usuario fue gusrdado"
+
+#: Controller/UsersController.php:109;141
+msgid "The user could not be saved. Please, try again."
+msgstr "el usuario no pudo ser guardado"
+
+#: Controller/UsersController.php:158
+msgid "The user has been deleted."
+msgstr "usuario eliminado"
+
+#: Controller/UsersController.php:160
+msgid "The user could not be deleted. Please, try again."
+msgstr "el usuario no pudo ser eliminado"
+
+#: Template/Agencies/add.ctp:11
+msgid "Add Agency"
+msgstr "agregar agencia"
+
+#: Template/Agencies/add.ctp:20 Template/Agencies/edit.ctp:29
+#: Template/AgenciesFiles/add.ctp:17 Template/AgenciesFiles/edit.ctp:25
+#: Template/AgenciesTags/add.ctp:17 Template/AgenciesTags/edit.ctp:17
+#: Template/Codes/add.ctp:16 Template/Codes/edit.ctp:16
+#: Template/Files/add.ctp:19 Template/Files/edit.ctp:19
+#: Template/I18n/add.ctp:25 Template/I18n/edit.ctp:31
+#: Template/Invoices/add.ctp:18 Template/Invoices/edit.ctp:18
+#: Template/Status/add.ctp:16 Template/Status/edit.ctp:16
+#: Template/Tags/add.ctp:17 Template/Tags/edit.ctp:17 Template/Users/add.ctp:19
+#: Template/Users/edit.ctp:19 View/Helper/FormHelper.php:1986
+msgid "Submit"
+msgstr "enviar"
+
+#: Template/Agencies/edit.ctp:9 Template/Agencies/index.ctp:17
+#: Template/Agencies/view.ctp:82 Template/AgenciesFiles/edit.ctp:9
+#: Template/AgenciesFiles/index.ctp:16 Template/AgenciesTags/index.ctp:15
+#: Template/Codes/index.ctp:17 Template/Codes/view.ctp:40
+#: Template/Files/index.ctp:20 Template/Files/view.ctp:47
+#: Template/I18n/add.ctp:9 Template/I18n/edit.ctp:9
+#: Template/I18n/index.ctp:9;23 Template/I18n/view.ctp:9
+#: Template/Invoices/index.ctp:19 Template/Layout/default.ctp:85
+#: Template/Status/index.ctp:17 Template/Status/view.ctp:39
+#: Template/Tags/index.ctp:17 Template/Tags/view.ctp:39
+#: Template/Users/index.ctp:19 Template/Users/view.ctp:48
+msgid "Actions"
+msgstr "acciones"
+
+#: Template/Agencies/edit.ctp:11 Template/Agencies/index.ctp:32
+#: Template/Agencies/view.ctp:66;93 Template/AgenciesFiles/edit.ctp:11
+#: Template/AgenciesFiles/index.ctp:28 Template/AgenciesTags/index.ctp:26
+#: Template/Codes/index.ctp:30 Template/Codes/view.ctp:54
+#: Template/Files/index.ctp:51 Template/Files/view.ctp:60
+#: Template/I18n/edit.ctp:11 Template/I18n/index.ctp:37
+#: Template/Invoices/index.ctp:34 Template/Status/index.ctp:30
+#: Template/Status/view.ctp:52 Template/Tags/index.ctp:30
+#: Template/Tags/view.ctp:52 Template/Users/index.ctp:34
+#: Template/Users/view.ctp:61
+msgid "Delete"
+msgstr "borrar"
+
+#: Template/Agencies/edit.ctp:13 Template/Agencies/index.ctp:32
+#: Template/Agencies/view.ctp:66;93 Template/AgenciesFiles/edit.ctp:13
+#: Template/AgenciesFiles/index.ctp:28 Template/AgenciesTags/index.ctp:26
+#: Template/Codes/index.ctp:30 Template/Codes/view.ctp:54
+#: Template/Files/index.ctp:51 Template/Files/view.ctp:60
+#: Template/I18n/edit.ctp:13 Template/I18n/index.ctp:37
+#: Template/I18n/view.ctp:11 Template/Invoices/index.ctp:34
+#: Template/Status/index.ctp:30 Template/Status/view.ctp:52
+#: Template/Tags/index.ctp:30 Template/Tags/view.ctp:52
+#: Template/Users/index.ctp:34 Template/Users/view.ctp:61
+msgid "Are you sure you want to delete # {0}?"
+msgstr "quiere eliminarlo # {0}?"
+
+#: Template/Agencies/edit.ctp:20
+msgid "Edit Agency"
+msgstr "editar agencia"
+
+#: Template/Agencies/index.ctp:9
+msgid "Agencies"
+msgstr "agencia"
+
+#: Template/Agencies/index.ctp:30 Template/Agencies/view.ctp:64;91
+#: Template/AgenciesFiles/index.ctp:26 Template/AgenciesTags/index.ctp:24
+#: Template/Codes/index.ctp:28 Template/Codes/view.ctp:52
+#: Template/Files/index.ctp:49 Template/Files/view.ctp:58
+#: Template/I18n/index.ctp:35 Template/Invoices/index.ctp:32
+#: Template/Status/index.ctp:28 Template/Status/view.ctp:50
+#: Template/Tags/index.ctp:28 Template/Tags/view.ctp:50
+#: Template/Users/index.ctp:32 Template/Users/view.ctp:59
+#: View/Helper/PaginatorHelper.php:1212
+msgid "View"
+msgstr "ver"
+
+#: Template/Agencies/index.ctp:31 Template/Agencies/view.ctp:65;92
+#: Template/AgenciesFiles/index.ctp:27 Template/AgenciesTags/index.ctp:25
+#: Template/Codes/index.ctp:29 Template/Codes/view.ctp:53
+#: Template/Files/index.ctp:50 Template/Files/view.ctp:59
+#: Template/I18n/index.ctp:36 Template/Invoices/index.ctp:33
+#: Template/Status/index.ctp:29 Template/Status/view.ctp:51
+#: Template/Tags/index.ctp:29 Template/Tags/view.ctp:51
+#: Template/Users/index.ctp:33 Template/Users/view.ctp:60
+msgid "Edit"
+msgstr "editar"
+
+#: Template/Agencies/index.ctp:41 Template/AgenciesFiles/index.ctp:36
+#: Template/AgenciesTags/index.ctp:34 Template/Codes/index.ctp:38
+#: Template/Files/index.ctp:59 Template/I18n/index.ctp:45
+#: Template/Invoices/index.ctp:42 Template/Status/index.ctp:38
+#: Template/Tags/index.ctp:38 Template/Users/index.ctp:42
+msgid "first"
+msgstr "primero"
+
+#: Template/Agencies/index.ctp:42 Template/AgenciesFiles/index.ctp:37
+#: Template/AgenciesTags/index.ctp:35 Template/Codes/index.ctp:39
+#: Template/Files/index.ctp:60 Template/I18n/index.ctp:46
+#: Template/Invoices/index.ctp:43 Template/Status/index.ctp:39
+#: Template/Tags/index.ctp:39 Template/Users/index.ctp:43
+msgid "previous"
+msgstr "anterior"
+
+#: Template/Agencies/index.ctp:44 Template/AgenciesFiles/index.ctp:39
+#: Template/AgenciesTags/index.ctp:37 Template/Codes/index.ctp:41
+#: Template/Files/index.ctp:62 Template/I18n/index.ctp:48
+#: Template/Invoices/index.ctp:45 Template/Status/index.ctp:41
+#: Template/Tags/index.ctp:41 Template/Users/index.ctp:45
+msgid "next"
+msgstr "siguiente"
+
+#: Template/Agencies/index.ctp:45 Template/AgenciesFiles/index.ctp:40
+#: Template/AgenciesTags/index.ctp:38 Template/Codes/index.ctp:42
+#: Template/Files/index.ctp:63 Template/I18n/index.ctp:49
+#: Template/Invoices/index.ctp:46 Template/Status/index.ctp:42
+#: Template/Tags/index.ctp:42 Template/Users/index.ctp:46
+msgid "last"
+msgstr "ultimo"
+
+#: Template/Agencies/index.ctp:47 Template/AgenciesFiles/index.ctp:42
+#: Template/AgenciesTags/index.ctp:40 Template/Codes/index.ctp:44
+#: Template/Files/index.ctp:65 Template/I18n/index.ctp:51
+#: Template/Invoices/index.ctp:48 Template/Status/index.ctp:44
+#: Template/Tags/index.ctp:44 Template/Users/index.ctp:48
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+"Pagina {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+
+#: Template/Agencies/view.ctp:12 Template/Files/view.ctp:42
+#: Template/Tags/view.ctp:34 Template/Users/view.ctp:43
+msgid "Agencie Details"
+msgstr "detalles de la agencia"
+
+#: Template/Agencies/view.ctp:16
+msgid "User"
+msgstr "usuario"
+
+#: Template/Agencies/view.ctp:20
+msgid "Code"
+msgstr "codigo"
+
+#: Template/Agencies/view.ctp:24;78 Template/AgenciesFiles/view.ctp:20
+#: Template/Codes/view.ctp:16;33 Template/Files/view.ctp:20;41
+#: Template/I18n/view.ctp:32 Template/Invoices/view.ctp:24
+#: Template/Status/view.ctp:16;33 Template/Tags/view.ctp:16;33
+#: Template/Users/view.ctp:25;42
+msgid "Id"
+msgstr "id"
+
+#: Template/Agencies/view.ctp:28;80 Template/Codes/view.ctp:20;34
+#: Template/Files/view.ctp:24;43 Template/Invoices/view.ctp:28
+#: Template/Status/view.ctp:20;37 Template/Tags/view.ctp:20;35
+#: Template/Users/view.ctp:29;44
+msgid "Created"
+msgstr "creado"
+
+#: Template/Agencies/view.ctp:32;81 Template/Codes/view.ctp:24;35
+#: Template/Files/view.ctp:28;44 Template/Invoices/view.ctp:32
+#: Template/Status/view.ctp:24;38 Template/Tags/view.ctp:24;36
+#: Template/Users/view.ctp:33;45
+msgid "Modified"
+msgstr "modificado"
+
+#: Template/Agencies/view.ctp:37
+msgid "Related Files"
+msgstr "archivos relacionados"
+
+#: Template/Agencies/view.ctp:41 Template/Files/index.ctp:19
+msgid "Image"
+msgstr "imagen"
+
+#: Template/Agencies/view.ctp:74
+msgid "Related Tags"
+msgstr "etiquetas relacionadas"
+
+#: Template/Agencies/view.ctp:79 Template/Tags/view.ctp:12
+msgid "Title"
+msgstr "titulo"
+
+#: Template/AgenciesFiles/add.ctp:11
+msgid "Add Agencies File"
+msgstr "agregar archivo de agencia"
+
+#: Template/AgenciesFiles/edit.ctp:19
+msgid "Edit Agencies File"
+msgstr "editar archivo de agencia"
+
+#: Template/AgenciesFiles/index.ctp:9
+msgid "Agencies Files"
+msgstr "archivo agencia"
+
+#: Template/AgenciesFiles/view.ctp:12 Template/Invoices/view.ctp:12
+msgid "Agency"
+msgstr "agencia"
+
+#: Template/AgenciesFiles/view.ctp:16
+msgid "File"
+msgstr "archivo"
+
+#: Template/AgenciesTags/add.ctp:11
+msgid "Add Agencies Tag"
+msgstr "agregar etiqueta de agencia"
+
+#: Template/AgenciesTags/edit.ctp:11
+msgid "Edit Agencies Tag"
+msgstr "editar etiqueta de agencia"
+
+#: Template/AgenciesTags/index.ctp:9
+msgid "Agencies Tags"
+msgstr "etiqueta de agencia"
+
+#: Template/AgenciesTags/view.ctp:12
+msgid "Tag"
+msgstr "etiqueta"
+
+#: Template/AgenciesTags/view.ctp:16 Template/Status/view.ctp:34
+msgid "Agencie Id"
+msgstr "identificador de agencia"
+
+#: Template/Codes/add.ctp:11
+msgid "Add Code"
+msgstr "agregar codigo"
+
+#: Template/Codes/edit.ctp:11
+msgid "Edit Code"
+msgstr "editar codigo"
+
+#: Template/Codes/index.ctp:9
+msgid "Codes"
+msgstr "codigo"
+
+#: Template/Codes/view.ctp:12
+msgid "Code Description"
+msgstr "descripcion del codigo"
+
+#: Template/Codes/view.ctp:29
+msgid "Related Users"
+msgstr "usuarios relacionados"
+
+#: Template/Codes/view.ctp:36 Template/Users/view.ctp:12
+msgid "Username"
+msgstr "nombre usuario"
+
+#: Template/Codes/view.ctp:37 Template/Users/view.ctp:16
+msgid "Email"
+msgstr "email"
+
+#: Template/Codes/view.ctp:38
+msgid "Password"
+msgstr "contrasena"
+
+#: Template/Codes/view.ctp:39 Template/Users/view.ctp:21
+msgid "Type"
+msgstr "tipo"
+
+#: Template/Files/add.ctp:11
+msgid "Add File"
+msgstr "agregar archivo"
+
+#: Template/Files/edit.ctp:11
+msgid "Edit File"
+msgstr "editar archivo"
+
+#: Template/Files/index.ctp:9
+msgid "Files"
+msgstr "archivo"
+
+#: Template/Files/view.ctp:12
+msgid "Name"
+msgstr "nombre"
+
+#: Template/Files/view.ctp:16
+msgid "Path"
+msgstr "camino"
+
+#: Template/Files/view.ctp:32 Template/Invoices/view.ctp:16
+#: Template/Status/index.ctp:9
+msgid "Status"
+msgstr "estatus"
+
+#: Template/Files/view.ctp:33
+msgid "Yes"
+msgstr "si"
+
+#: Template/Files/view.ctp:33
+msgid "No"
+msgstr "no"
+
+#: Template/Files/view.ctp:37 Template/Tags/view.ctp:29
+#: Template/Users/view.ctp:38
+msgid "Related Agencies"
+msgstr "agencias relacionadas"
+
+#: Template/Files/view.ctp:45 Template/Tags/view.ctp:37
+#: Template/Users/view.ctp:46
+msgid "User Id"
+msgstr "identificador de usuario"
+
+#: Template/Files/view.ctp:46 Template/Tags/view.ctp:38
+#: Template/Users/view.ctp:47
+msgid "Code Id"
+msgstr "id codigo"
+
+#: Template/I18n/add.ctp:10 Template/I18n/edit.ctp:16 Template/I18n/view.ctp:12
+msgid "List I18n"
+msgstr ""
+
+#: Template/I18n/add.ctp:16
+msgid "Add I18n"
+msgstr ""
+
+#: Template/I18n/edit.ctp:22 Template/I18n/view.ctp:10
+msgid "Edit I18n"
+msgstr ""
+
+#: Template/I18n/index.ctp:10 Template/I18n/view.ctp:13
+msgid "New I18n"
+msgstr ""
+
+#: Template/I18n/index.ctp:14
+msgid "I18n"
+msgstr ""
+
+#: Template/I18n/view.ctp:11
+msgid "Delete I18n"
+msgstr ""
+
+#: Template/I18n/view.ctp:20
+msgid "Locale"
+msgstr "local"
+
+#: Template/I18n/view.ctp:24
+msgid "Model"
+msgstr "modelo"
+
+#: Template/I18n/view.ctp:28
+msgid "Field"
+msgstr "campo"
+
+#: Template/I18n/view.ctp:36
+msgid "Foreign Key"
+msgstr "clave extranjera"
+
+#: Template/I18n/view.ctp:41
+msgid "Content"
+msgstr "contiene"
+
+#: Template/Invoices/add.ctp:11
+msgid "Add Invoice"
+msgstr "agregar factura"
+
+#: Template/Invoices/edit.ctp:11
+msgid "Edit Invoice"
+msgstr "editar factura"
+
+#: Template/Invoices/index.ctp:9
+msgid "Invoices"
+msgstr "facturas"
+
+#: Template/Invoices/view.ctp:20 Template/Status/view.ctp:36
+msgid "Invoice Details"
+msgstr "detalles de la factura"
+
+#: Template/Layout/default.ctp:86
+msgid "List Agencies"
+msgstr "lista de agencias"
+
+#: Template/Layout/default.ctp:87
+msgid "List Invoices"
+msgstr "lista de facturas"
+
+#: Template/Layout/default.ctp:88
+msgid "List Users"
+msgstr "lista de usuarios"
+
+#: Template/Layout/default.ctp:89
+msgid "List Codes"
+msgstr "lista de codigos"
+
+#: Template/Layout/default.ctp:90
+msgid "List Tags"
+msgstr "lista de etiquetas"
+
+#: Template/Layout/default.ctp:91
+msgid "List Status"
+msgstr "lista de estatus"
+
+#: Template/Layout/default.ctp:92
+msgid "List Files"
+msgstr "lista de archivos"
+
+#: Template/Layout/default.ctp:97
+msgid "New Agency"
+msgstr "nueva agencia"
+
+#: Template/Layout/default.ctp:104
+msgid "New Tag"
+msgstr "nueva etiqueta"
+
+#: Template/Layout/default.ctp:109
+msgid "New File"
+msgstr "nuevo archivo"
+
+#: Template/Layout/default.ctp:114
+msgid "New Invoice"
+msgstr "nueva factura"
+
+#: Template/Layout/default.ctp:119
+msgid "New Status"
+msgstr "nuevo estatus"
+
+#: Template/Layout/default.ctp:124
+msgid "New Code"
+msgstr "nuevo codigo"
+
+#: Template/Layout/error.ctp:35 Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr "error"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "atras"
+
+#: Template/Status/add.ctp:11
+msgid "Add Status"
+msgstr "agregar estatus"
+
+#: Template/Status/edit.ctp:11
+msgid "Edit Status"
+msgstr "editar estatus"
+
+#: Template/Status/view.ctp:12
+msgid "Description Status"
+msgstr "descripcion de estatus"
+
+#: Template/Status/view.ctp:29
+msgid "Related Invoices"
+msgstr "facturas relacionadas"
+
+#: Template/Status/view.ctp:35
+msgid "Status Id"
+msgstr "estatus id"
+
+#: Template/Tags/add.ctp:11
+msgid "Add Tag"
+msgstr "nueva etiqueta"
+
+#: Template/Tags/edit.ctp:11
+msgid "Edit Tag"
+msgstr "editar etiqueta"
+
+#: Template/Tags/index.ctp:9
+msgid "Tags"
+msgstr "etiqueta"
+
+#: Template/Users/add.ctp:11
+msgid "Add User"
+msgstr "nuevo utilisador"
+
+#: Template/Users/edit.ctp:11
+msgid "Edit User"
+msgstr "editar utilisador"
+
+#: Template/Users/index.ctp:9
+msgid "Users"
+msgstr "utilisadores"
+
+#: Template/Users/login.ctp:11
+msgid "Login"
+msgstr "conectarse"
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr "error interno ocurrido"
+
+#: Controller/Component/AuthComponent.php:500
+msgid "You are not authorized to access that location."
+msgstr "no esta autorizado para esta seccion"
+
+#: Controller/Component/CsrfComponent.php:162
+#: Http/Middleware/CsrfProtectionMiddleware.php:191
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:166
+#: Http/Middleware/CsrfProtectionMiddleware.php:195
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:262
+msgid "Not Found"
+msgstr "no encontrado"
+
+#: Error/ExceptionRenderer.php:264
+msgid "An Internal Error Has Occurred."
+msgstr "error interno"
+
+#: Http/Response.php:2603
+msgid "The requested file contains `..` and will not be read."
+msgstr "el archivo tiene `..` y no fue lleido"
+
+#: Http/Response.php:2624
+msgid "The requested file was not found"
+msgstr "archivo no encontrado"
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154;332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155;333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156;334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157;335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171;346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172;347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173;348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174;349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47;126;316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51;129;319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57;132;322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59;135;325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64;138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68;141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72;144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr "valor en uso"
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr "valor inexistente"
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:917
+msgid "and"
+msgstr "y"
+
+#: Validation/Validator.php:111
+msgid "This field is required"
+msgstr "campo requerido"
+
+#: Validation/Validator.php:112
+msgid "This field cannot be left empty"
+msgstr "campo no puede quedar vacio"
+
+#: Validation/Validator.php:2054
+msgid "The provided value is invalid"
+msgstr "valor invalido"
+
+#: View/Helper/FormHelper.php:1097
+msgid "Edit {0}"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1099
+msgid "New {0}"
+msgstr ""
+
+#: View/Helper/HtmlHelper.php:815
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr ""

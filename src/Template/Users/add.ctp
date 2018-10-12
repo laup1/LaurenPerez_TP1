@@ -13,9 +13,10 @@
             echo $this->Form->control('username');
             echo $this->Form->control('email');
             echo $this->Form->control('password');
-            echo $this->Form->control('type');
+            echo $this->Form->hidden('type');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
+    
     <?= $this->Form->end() ?>
 </div>

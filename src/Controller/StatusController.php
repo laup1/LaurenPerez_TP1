@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\I18n\I18n;
 
 /**
  * Status Controller
@@ -20,6 +21,18 @@ class StatusController extends AppController
      */
     public function index()
     {
+        
+        
+        $status1 = $this->Status->get(2);
+        $status1->translation('es')->description_Status = 'pagado';
+        $status1->translation('en')->description_Status = 'paid';
+        $this->Status->save($status1);
+        
+         $status2 = $this->Status->get(3);
+        $status2->translation('es')->description_Status = 'anulado';
+        $status2->translation('en')->description_Status = 'canceled';
+        $this->Status->save($status2);
+        
         $status = $this->paginate($this->Status);
 
         $this->set(compact('status'));

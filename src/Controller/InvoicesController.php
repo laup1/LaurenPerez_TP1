@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\I18n\I18n;
 
 /**
  * Invoices Controller
@@ -15,6 +16,7 @@ class InvoicesController extends AppController
  public function initialize() {
         parent::initialize();
         $this->Auth->allow(['add']);
+       
     }
     
       public function isAuthorized($user) {
@@ -31,11 +33,25 @@ class InvoicesController extends AppController
      */
     public function index()
     {
+        $invoice = $this->Invoices->get(3);
+        $invoice->translation('es')->invoice_details = 'pagado';
+        $invoice->translation('en')->invoice_details = 'paid';
+        $this->Invoices->save($invoice);
+        
+        $invoice2 = $this->Invoices->get(4);
+        $invoice2->translation('es')->invoice_details = 'hablar con la persona';
+        $invoice2->translation('en')->invoice_details = 'speak with the person';
+        $this->Invoices->save($invoice2);
+      
+        
         $this->paginate = [
             'contain' => ['Agencies', 'Status']
         ];
         $invoices = $this->paginate($this->Invoices);
-
+       
+        
+        
+        
         $this->set(compact('invoices'));
     }
 

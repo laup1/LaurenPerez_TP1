@@ -38,6 +38,11 @@ class AgenciesController extends AppController
             
         }
         
+         if ($user['type'] === 'admin'){
+            return true;
+       
+        } 
+        
 
       
     }

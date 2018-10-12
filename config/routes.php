@@ -59,6 +59,10 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->connect('/pages/*', ['controller' => 'Users', 'action' => 'index']);
 
+    
+     $routes->connect('/email',['controller'=>'Emails','action'=>'index']);
+      
+    
     /**
      * Connect catchall routes for all controllers.
      *
@@ -77,3 +81,4 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->fallbacks(DashedRoute::class);
 });
+ Plugin::routes();

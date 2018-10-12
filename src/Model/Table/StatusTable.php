@@ -34,6 +34,7 @@ class StatusTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
+         $this->addBehavior('Translate', ['fields' => ['description_status']]);
 
         $this->setTable('status');
         $this->setDisplayField('description_Status');

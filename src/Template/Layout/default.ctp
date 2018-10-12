@@ -65,6 +65,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         ?>
                     </li>
                     <li>
+                        <?php echo $this->Html->link('À propos', ['controller' => 'Users', 'action' => 'aPropos']);   ?>      
+                        
+                    </li>
+                   
+                    <li>
                         <?= $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]) ?>
                     </li>
                     <li>
@@ -73,7 +78,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                      <li>
                         <?= $this->Html->link('Español', ['action' => 'changeLang', 'es_CO'], ['escape' => false]) ?>
                     </li>
-                    
+                     
+         
                 <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
                 <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
             </ul>
@@ -102,7 +108,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
               $loguser = $this->request->getSession()->read('Auth.User');             
                if ($loguser)                 
               echo $this->Html->link(__('New Tag'), ['controller' => 'Tags', 'action' => 'add']) ?>
-       </li>   
+       </li>  
+       
+        <li>  <?php
+              $loguser = $this->request->getSession()->read('Auth.User');             
+               if ($loguser)                 
+              echo $this->Html->link(__('Profil'), ['controller' => 'Users', 'action' => 'view',$loguser['id']]) ?>
+       </li>  
        <li>  <?php
               $loguser = $this->request->getSession()->read('Auth.User');             
                if ($loguser)             

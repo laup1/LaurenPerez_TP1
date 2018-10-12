@@ -18,6 +18,7 @@ use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\I18n\I18n;
 
+
 /**
  * Application Controller
  *
@@ -28,6 +29,7 @@ use Cake\I18n\I18n;
  */
 class AppController extends Controller
 {
+   
 
     /**
      * Initialization hook method.

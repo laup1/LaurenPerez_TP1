@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 
+
 /**
  * Users Controller
  *
@@ -14,14 +15,14 @@ class UsersController extends AppController
 {
    public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['logout', 'add']);
+        $this->Auth->allow(['logout', 'add', 'aPropos']);
     }
     
         public function isAuthorized($user) {        
         
         $action = $this->request->getParam('action');
         // Droits par défaut
-        if (in_array($action, ['add', 'logout'])) {
+        if (in_array($action, ['add', 'logout', 'aPropos'])) {
             return true;
         }
 
@@ -60,7 +61,8 @@ class UsersController extends AppController
     }
 
     
-    
+
+
     
     /**
      * Index method
@@ -103,12 +105,17 @@ class UsersController extends AppController
             $user = $this->Users->patchEntity($user, $this->request->getData());
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
+                    //return $this->redirect( ['controller' => 'Emails', 'action' => 'index']);
 
                 return $this->redirect(['action' => 'index']);
+             
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
         $this->set(compact('user'));
+        
+       
+       
     }
     
     
@@ -161,5 +168,15 @@ class UsersController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+    
+    public function aPropos() {       
+                          
+                return $this->redirect('\src\Template\Users\aPropos.php'); 
+                   //return $this->redirect(['/Users/aPropos.php']);
+              
+                          
+           
+          
     }
 }

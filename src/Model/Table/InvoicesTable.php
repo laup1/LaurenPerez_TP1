@@ -35,7 +35,7 @@ class InvoicesTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-
+         $this->addBehavior('Translate', ['fields' => ['invoice_details']]);
         $this->setTable('invoices');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');

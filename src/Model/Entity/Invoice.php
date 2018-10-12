@@ -2,6 +2,7 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
+use Cake\ORM\Behavior\Translate\TranslateTrait;
 
 /**
  * Invoice Entity
@@ -18,6 +19,8 @@ use Cake\ORM\Entity;
  */
 class Invoice extends Entity
 {
+    
+     use TranslateTrait;
 
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().

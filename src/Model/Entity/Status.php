@@ -2,6 +2,7 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
+use Cake\ORM\Behavior\Translate\TranslateTrait;
 
 /**
  * Status Entity
@@ -15,6 +16,7 @@ use Cake\ORM\Entity;
  */
 class Status extends Entity
 {
+     use TranslateTrait;
 
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
