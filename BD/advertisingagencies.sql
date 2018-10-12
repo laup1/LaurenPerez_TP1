@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 10 Octobre 2018 à 07:28
+-- Généré le :  Ven 12 Octobre 2018 à 05:19
 -- Version du serveur :  5.5.58
 -- Version de PHP :  5.6.31
 
@@ -133,7 +133,17 @@ CREATE TABLE IF NOT EXISTS `i18n` (
   `foreign_key` int(10) NOT NULL,
   `field` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `content` text COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Contenu de la table `i18n`
+--
+
+INSERT INTO `i18n` (`id`, `locale`, `model`, `foreign_key`, `field`, `content`) VALUES
+(1, 'es', 'Invoices', 3, 'invoice_details', 'pagado'),
+(2, 'en', 'Invoices', 3, 'invoice_details', 'paid'),
+(3, 'es', 'Invoices', 4, 'invoice_details', 'hablar con la persona'),
+(4, 'en', 'Invoices', 4, 'invoice_details', 'speak with the person');
 
 -- --------------------------------------------------------
 
@@ -148,14 +158,15 @@ CREATE TABLE IF NOT EXISTS `invoices` (
   `invoice_details` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created` date NOT NULL,
   `modified` date NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Contenu de la table `invoices`
 --
 
 INSERT INTO `invoices` (`id`, `agencie_id`, `status_id`, `invoice_details`, `created`, `modified`) VALUES
-(3, 4, 1, 'payé', '2018-10-10', '2018-10-10');
+(3, 4, 1, 'payé', '2018-10-10', '2018-10-11'),
+(4, 5, 2, 'parler avec la personne', '2018-10-11', '2018-10-11');
 
 -- --------------------------------------------------------
 
@@ -176,8 +187,8 @@ CREATE TABLE IF NOT EXISTS `status` (
 
 INSERT INTO `status` (`id`, `description_Status`, `created`, `modified`) VALUES
 (1, 'payee', '2018-08-27', '2018-08-27'),
-(2, 'payée', '2018-10-09', '2018-10-09'),
-(3, 'annulé', '2018-10-09', '2018-10-09'),
+(2, 'payée', '2018-10-09', '2018-10-11'),
+(3, 'annulé', '2018-10-09', '2018-10-11'),
 (4, 'en attente', '2018-10-09', '2018-10-09'),
 (5, 'en retard', '2018-10-09', '2018-10-09');
 
@@ -215,7 +226,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'agencie'
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Contenu de la table `users`
@@ -223,7 +234,10 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `created`, `modified`, `username`, `email`, `password`, `type`) VALUES
 (5, '2018-10-09', '2018-10-09', 'cryspelo', 'arhalltraste@hotmail.com', '$2y$10$U2IaenpdF1nOwj8XvQ0xDOZRffH8H9D2kvDsauJ5ibf17usH8/LcG', 'agencie'),
-(6, '2018-10-09', '2018-10-09', 'admin', 'laurent_perez@hotmail.com', '$2y$10$gVRzGQk0/R5r8BxeOSKS.uYPE3raLxqg65wUo40/MdwTsM03nrsbq', 'admin');
+(6, '2018-10-09', '2018-10-09', 'admin', 'laurent_perez@hotmail.com', '$2y$10$gVRzGQk0/R5r8BxeOSKS.uYPE3raLxqg65wUo40/MdwTsM03nrsbq', 'admin'),
+(10, '2018-10-12', '2018-10-12', 'kkk', 'williamzeus91@hotmail.com', '$2y$10$.ItlaQgLKNlUsZSfVBbf/.YtjmkPSwRVbFz5nbD0y1qM/km5QkY/y', 'agencie'),
+(11, '2018-10-12', '2018-10-12', 'rocio', 'laurenrpl0@gmail.com', '$2y$10$kJdXTHQJOMTFHfHxWwu9/.M9cREMatdwnVJwv1NtVGhVBVxmIEN0q', 'agencie'),
+(12, '2018-10-12', '2018-10-12', 'jaja', 'jaja@jajaj.jaja', '$2y$10$NhOHNUuWgZq3qTup5h9d7OWgwLNc6rOmoBKxMjuLFO6vng9Tb9vKC', 'agencie');
 
 --
 -- Index pour les tables exportées
@@ -331,12 +345,12 @@ ALTER TABLE `files`
 -- AUTO_INCREMENT pour la table `i18n`
 --
 ALTER TABLE `i18n`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `status`
 --
@@ -351,7 +365,7 @@ ALTER TABLE `tags`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
 -- Contraintes pour les tables exportées
 --
