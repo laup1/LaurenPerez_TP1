@@ -172,7 +172,7 @@ class UsersController extends AppController
     
     public function aPropos() {       
                           
-                return $this->redirect('\src\Template\Users\aPropos.php'); 
+        return $this->redirect('\src\Template\Users\aPropos.php'); 
                    //return $this->redirect(['/Users/aPropos.php']);
               
                           
