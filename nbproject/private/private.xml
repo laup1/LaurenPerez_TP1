@@ -4,6 +4,7 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Controller/InvoicesController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Table/AgenciesTable.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Table/InvoicesTable.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Entity/Invoice.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Template/Files/index.ctp</file>
@@ -11,23 +12,32 @@
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Controller/StatusController.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Controller/AgenciesController.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Table/StatusTable.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Entity/File.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/config/app.default.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Template/Tags/add.ctp</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Template/Files/add.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Entity/AgenciesTag.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Controller/UsersController.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Controller/AgenciesFilesController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Template/AgenciesTags/add.ctp</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Controller/FilesController.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Template/Users/menu.ctp</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Template/Files/edit.ctp</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Controller/AgenciesTagsController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Table/TagsTable.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Table/FilesTable.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Controller/EmailsController.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/config/.env.default</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Entity/User.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Template/AgenciesFiles/add.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Table/CodesTable.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Controller/CodesController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Entity/Code.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Template/Users/login.ctp</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Entity/Status.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Entity/AgenciesFile.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Table/UsersTable.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Model/Table/AgenciesFilesTable.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/config/app.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Controller/TagsController.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/LaurenPerez_tp1/src/Template/Users/add.ctp</file>

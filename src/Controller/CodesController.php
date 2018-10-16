@@ -27,9 +27,9 @@ class CodesController extends AppController
         }
         if ($user['type'] === 'agencie'){            
          // Check that the article belongs to the current user.
-        $agencie = $this->Agencies->findById($id)->first();
+        $agencie = $this->Codes->find('list', ['limit' => 200]);
 
-        return $agencie->user_id === $user['id'];
+        return $agencie;
             
         }
         

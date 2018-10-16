@@ -43,7 +43,7 @@ class TagsTable extends Table
 
         $this->belongsToMany('Agencies', [
             'foreignKey' => 'tag_id',
-            'targetForeignKey' => 'agency_id',
+            'targetForeignKey' => 'agencie_id',
             'joinTable' => 'agencies_tags'
         ]);
     }

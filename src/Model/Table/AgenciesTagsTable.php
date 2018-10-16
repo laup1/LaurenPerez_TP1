@@ -34,8 +34,8 @@ class AgenciesTagsTable extends Table
         parent::initialize($config);
 
         $this->setTable('agencies_tags');
-        $this->setDisplayField('agency_id');
-        $this->setPrimaryKey('agency_id');
+        $this->setDisplayField('agencie_id');
+        $this->setPrimaryKey('agencie_id');
 
         $this->belongsTo('Tags', [
             'foreignKey' => 'tag_id',

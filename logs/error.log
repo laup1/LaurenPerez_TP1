@@ -6060,3 +6060,902 @@ Stack Trace:
 #45 {main}
 
 
+2018-10-16 11:47:20 Error: Fatal Error (1): Call to a member function findById() on boolean in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php, line 30]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 11:47:20 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php line=30 in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 11:47:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php:30) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 11:47:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php:30) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 11:47:20 Error: [Cake\Error\FatalErrorException] Call to a member function findById() on boolean in C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php on line 30
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\Program File...', 30)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-10-16 11:48:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AgenciesTags.agency_id' in 'on clause'
+Request URL: /tags/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/tags
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectWithPivotLoader.php(168): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectLoader.php(125): Cake\ORM\Association\Loader\SelectWithPivotLoader->_buildResultMap(Object(Cake\ORM\Query), Array)
+#12 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(585): Cake\ORM\Association\Loader\SelectLoader->buildEagerLoader(Array)
+#13 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(702): Cake\ORM\Association\BelongsToMany->eagerLoader(Array)
+#14 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\ORM\EagerLoader->loadExternal(Object(Cake\ORM\Query), Object(Cake\Database\Statement\CallbackStatement))
+#15 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\TagsController.php(79): Cake\ORM\Table->get('1', Array)
+#21 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TagsController->edit('1')
+#22 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TagsController))
+#24 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-10-16 11:49:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AgenciesTags.agency_id' in 'on clause'
+Request URL: /tags/view/1
+Referer URL: http://localhost/LaurenPerez_tp1/tags
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectWithPivotLoader.php(168): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectLoader.php(125): Cake\ORM\Association\Loader\SelectWithPivotLoader->_buildResultMap(Object(Cake\ORM\Query), Array)
+#12 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(585): Cake\ORM\Association\Loader\SelectLoader->buildEagerLoader(Array)
+#13 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(702): Cake\ORM\Association\BelongsToMany->eagerLoader(Array)
+#14 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\ORM\EagerLoader->loadExternal(Object(Cake\ORM\Query), Object(Cake\Database\Statement\CallbackStatement))
+#15 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\TagsController.php(42): Cake\ORM\Table->get('1', Array)
+#21 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TagsController->view('1')
+#22 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TagsController))
+#24 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-10-16 11:50:55 Error: Fatal Error (1): Call to a member function findById() on boolean in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php, line 30]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 11:50:56 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php line=30 in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 11:50:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php:30) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 11:50:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php:30) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 11:50:56 Error: [Cake\Error\FatalErrorException] Call to a member function findById() on boolean in C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php on line 30
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\Program File...', 30)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-10-16 11:52:15 Error: [BadMethodCallException] Unknown method "AgenciesfindById"
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php(30): Cake\ORM\Table->__call('AgenciesfindByI...', Array)
+#1 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php(30): App\Model\Table\CodesTable->AgenciesfindById('1')
+#2 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CodesController->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#4 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#5 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#8 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#9 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#10 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#11 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CodesController))
+#12 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2018-10-16 11:53:18 Error: [BadMethodCallException] Unknown method "AgenciesfindById"
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association.php(1416): Cake\ORM\Table->__call('AgenciesfindByI...', Array)
+#1 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association.php(1416): App\Model\Table\AgenciesTable->AgenciesfindById('1')
+#2 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php(30): Cake\ORM\Association->__call('AgenciesfindByI...', Array)
+#3 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php(30): Cake\ORM\Association\HasMany->AgenciesfindById('1')
+#4 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CodesController->isAuthorized(Array)
+#5 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#6 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#7 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#8 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#9 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#10 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#11 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#12 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#13 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CodesController))
+#14 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-10-16 11:53:42 Error: [InvalidArgumentException] The Users association is not defined on Codes.
+Request URL: /codes/view/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Users')
+#1 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\CodesTable), 'Users', Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\CodesTable))
+#3 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\CodesTable))
+#4 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\CodesTable), true)
+#5 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php(68): Cake\ORM\Table->get('1', Array)
+#21 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\CodesController->view('1')
+#22 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CodesController))
+#24 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-10-16 11:54:43 Error: [InvalidArgumentException] The Users association is not defined on Codes.
+Request URL: /codes/view/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Users')
+#1 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\CodesTable), 'Users', Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\CodesTable))
+#3 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\CodesTable))
+#4 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\CodesTable), true)
+#5 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php(68): Cake\ORM\Table->get('1', Array)
+#21 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\CodesController->view('1')
+#22 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CodesController))
+#24 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-10-16 11:56:34 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AgenciesTags.agency_id' in 'on clause'
+Request URL: /tags/view/1
+Referer URL: http://localhost/LaurenPerez_tp1/tags
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectWithPivotLoader.php(168): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectLoader.php(125): Cake\ORM\Association\Loader\SelectWithPivotLoader->_buildResultMap(Object(Cake\ORM\Query), Array)
+#12 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(585): Cake\ORM\Association\Loader\SelectLoader->buildEagerLoader(Array)
+#13 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(702): Cake\ORM\Association\BelongsToMany->eagerLoader(Array)
+#14 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\ORM\EagerLoader->loadExternal(Object(Cake\ORM\Query), Object(Cake\Database\Statement\CallbackStatement))
+#15 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\TagsController.php(42): Cake\ORM\Table->get('1', Array)
+#21 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TagsController->view('1')
+#22 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TagsController))
+#24 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-10-16 11:57:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AgenciesTags.agency_id' in 'on clause'
+Request URL: /tags/view/1
+Referer URL: http://localhost/LaurenPerez_tp1/tags
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectWithPivotLoader.php(168): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectLoader.php(125): Cake\ORM\Association\Loader\SelectWithPivotLoader->_buildResultMap(Object(Cake\ORM\Query), Array)
+#12 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(585): Cake\ORM\Association\Loader\SelectLoader->buildEagerLoader(Array)
+#13 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(702): Cake\ORM\Association\BelongsToMany->eagerLoader(Array)
+#14 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\ORM\EagerLoader->loadExternal(Object(Cake\ORM\Query), Object(Cake\Database\Statement\CallbackStatement))
+#15 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\TagsController.php(42): Cake\ORM\Table->get('1', Array)
+#21 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TagsController->view('1')
+#22 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TagsController))
+#24 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-10-16 11:57:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AgenciesTags.agency_id' in 'on clause'
+Request URL: /tags/view/1
+Referer URL: http://localhost/LaurenPerez_tp1/tags
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectWithPivotLoader.php(168): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectLoader.php(125): Cake\ORM\Association\Loader\SelectWithPivotLoader->_buildResultMap(Object(Cake\ORM\Query), Array)
+#12 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(585): Cake\ORM\Association\Loader\SelectLoader->buildEagerLoader(Array)
+#13 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(702): Cake\ORM\Association\BelongsToMany->eagerLoader(Array)
+#14 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\ORM\EagerLoader->loadExternal(Object(Cake\ORM\Query), Object(Cake\Database\Statement\CallbackStatement))
+#15 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\TagsController.php(42): Cake\ORM\Table->get('1', Array)
+#21 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\TagsController->view('1')
+#22 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TagsController))
+#24 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-10-16 11:59:07 Error: [InvalidArgumentException] The Users association is not defined on Codes.
+Request URL: /codes/view/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Users')
+#1 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\CodesTable), 'Users', Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\CodesTable))
+#3 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\CodesTable))
+#4 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\CodesTable), true)
+#5 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php(68): Cake\ORM\Table->get('1', Array)
+#21 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\CodesController->view('1')
+#22 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CodesController))
+#24 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-10-16 11:59:44 Error: [InvalidArgumentException] The Users association is not defined on Codes.
+Request URL: /codes/view/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Users')
+#1 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(366): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\CodesTable), 'Users', Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\CodesTable))
+#3 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\CodesTable))
+#4 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\CodesTable), true)
+#5 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(138): Cake\ORM\Query->sql()
+#7 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\CodesController.php(68): Cake\ORM\Table->get('1', Array)
+#21 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\CodesController->view('1')
+#22 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CodesController))
+#24 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-10-16 12:01:37 Error: Fatal Error (1): Call to a member function findById() on boolean in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\InvoicesController.php, line 36]
+Request URL: /invoices/edit/5
+Referer URL: http://localhost/LaurenPerez_tp1/invoices
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 12:01:37 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\InvoicesController.php line=36 in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /invoices/edit/5
+Referer URL: http://localhost/LaurenPerez_tp1/invoices
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 12:01:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\InvoicesController.php:36) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /invoices/edit/5
+Referer URL: http://localhost/LaurenPerez_tp1/invoices
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 12:01:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\InvoicesController.php:36) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /invoices/edit/5
+Referer URL: http://localhost/LaurenPerez_tp1/invoices
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 12:01:37 Error: [Cake\Error\FatalErrorException] Call to a member function findById() on boolean in C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\InvoicesController.php on line 36
+Request URL: /invoices/edit/5
+Referer URL: http://localhost/LaurenPerez_tp1/invoices
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\Program File...', 36)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-10-16 12:02:26 Error: Fatal Error (1): Call to a member function findById() on null in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\InvoicesController.php, line 36]
+Request URL: /invoices/edit/5
+Referer URL: http://localhost/LaurenPerez_tp1/invoices
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 12:02:27 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /invoices/edit/5
+Referer URL: http://localhost/LaurenPerez_tp1/invoices
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 12:02:27 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /invoices/edit/5
+Referer URL: http://localhost/LaurenPerez_tp1/invoices
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 12:02:27 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /invoices/edit/5
+Referer URL: http://localhost/LaurenPerez_tp1/invoices
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 110
+[main] - [internal], line ??
+
+
+
+2018-10-16 12:02:27 Error: [Cake\Error\FatalErrorException] Call to a member function findById() on null in C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\src\Controller\InvoicesController.php on line 36
+Request URL: /invoices/edit/5
+Referer URL: http://localhost/LaurenPerez_tp1/invoices
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(110): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\Program File...', 36)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-10-16 12:03:15 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-16 12:03:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-16 12:03:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-16 12:03:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-16 12:03:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /codes/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/codes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-16 12:11:53 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /tags/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/tags
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-16 12:11:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 149]
+Request URL: /tags/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/tags
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 149
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-16 12:11:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tags/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/tags
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-16 12:11:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tags/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/tags
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-16 12:11:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /tags/edit/1
+Referer URL: http://localhost/LaurenPerez_tp1/tags
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+

@@ -19,12 +19,30 @@ class InvoicesController extends AppController
        
     }
     
-      public function isAuthorized($user) {
+       public function isAuthorized($user) {
         $action = $this->request->getParam('action');
-        // The edit and delete actions are allowed to logged in users for comments.
-        if (in_array($action, ['edit', 'delete'])) {
+        // The add and tags actions are always allowed to logged in users.
+        if (in_array($action, ['add', 'tags'])) {
             return true;
         }
+
+        // All other actions require a slug.
+        $id = $this->request->getParam('pass.0');
+        if (!$id) {
+            return false;
+        }
+        if ($user['type'] === 'agencie'){            
+         // Check that the article belongs to the current user.
+        $agencie = $this->Invoices->Agencies->findById($id)->first();
+
+        return $agencie->user_id === $user['id'];
+            
+        }
+        
+         if ($user['type'] === 'admin'){
+            return true;
+       
+        } 
     }
     /**
      * Index method
