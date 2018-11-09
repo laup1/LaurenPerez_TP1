@@ -39,6 +39,7 @@ class Agency extends Entity
         'user' => true,
         'code' => true,
         'files' => true,
-        'tags' => true
+        'tags' => true,
+         'subcategory_id' => true
     ];
 }

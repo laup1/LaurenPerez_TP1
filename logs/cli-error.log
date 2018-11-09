@@ -1414,3 +1414,22 @@ Stack Trace:
 #20 {main}
 
 
+2018-11-09 16:48:53 Error: [Cake\Database\Exception] Cannot describe departments. It has 0 columns. in C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 99
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('departments', Array)
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('departments')
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'departments', 'Departments')
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Departments')
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Departments')
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Departments', 0)
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('departments')
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+

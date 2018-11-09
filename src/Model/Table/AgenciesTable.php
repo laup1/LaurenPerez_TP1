@@ -49,6 +49,9 @@ class AgenciesTable extends Table
             'foreignKey' => 'user_id',
             'joinType' => 'INNER'
         ]);
+         $this->belongsTo('Subcategories', [
+            'foreignKey' => 'subcategory_id'
+        ]);
         $this->belongsTo('Codes', [
             'foreignKey' => 'code_id',
             'joinType' => 'INNER'

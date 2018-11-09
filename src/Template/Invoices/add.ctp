@@ -11,6 +11,7 @@
         <legend><?= __('Add Invoice') ?></legend>
         <?php
             echo $this->Form->control('agencie_id', ['value' => $agencie]);
+              //echo $this->Form->input('status_id', ['id' => 'autocomplete']);
             echo $this->Form->control('status_id', ['options' => $status]);
             echo $this->Form->control('invoice_details');
         ?>

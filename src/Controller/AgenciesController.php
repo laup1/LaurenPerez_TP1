@@ -72,7 +72,7 @@ class AgenciesController extends AppController
     public function view($id = null)
     {
         $agency = $this->Agencies->get($id, [
-            'contain' => ['Users', 'Codes', 'Files', 'Tags']
+            'contain' => ['Users', 'Codes', 'Files', 'Tags',  'Subcategories']
         ]);
 
         $this->set('agency', $agency);
@@ -88,6 +88,11 @@ class AgenciesController extends AppController
         $agency = $this->Agencies->newEntity();
         if ($this->request->is('post')) {
             $agency = $this->Agencies->patchEntity($agency, $this->request->getData());
+            
+             $user = $this->Auth->user();
+            // Changed: Set the user_id from the session.
+           // $article->user_id = $this->Auth->user();
+            
             if ($this->Agencies->save($agency)) {
                 $this->Flash->success(__('The agency has been saved.'));
 
@@ -95,12 +100,27 @@ class AgenciesController extends AppController
             }
             $this->Flash->error(__('The agency could not be saved. Please, try again.'));
         }
+        
+         // Bâtir la liste des catégories  
+        $this->loadModel('Categories');
+        $categories = $this->Categories->find('list', ['limit' => 200]);
+
+        // Extraire le id de la première catégorie
+        $categories = $categories->toArray();
+        reset($categories);
+        $category_id = key($categories);
+
+        // Bâtir la liste des sous-catégories reliées à cette catégorie
+        $subcategories = $this->Agencies->Subcategories->find('list', [
+            'conditions' => ['Subcategories.category_id' => $category_id],
+        ]);
+        
       $users = $this->Agencies->Users->find('list', ['limit' => 200]);
         $codes = $this->Agencies->Codes->find('list', ['limit' => 200]);
         $files = $this->Agencies->Files->find('list', ['limit' => 200]);
         $tags = $this->Agencies->Tags->find('list', ['limit' => 200]);
          $user = $this->Auth->user();
-        $this->set(compact('agency', 'users', 'codes', 'files', 'tags', 'user'));
+        $this->set(compact('agency', 'users', 'codes', 'files', 'tags', 'user', 'subcategories', 'categories'));
     }
 
     /**
