@@ -51,15 +51,13 @@ class SqliteSchema extends BaseSchema
     protected function _convertColumn($column)
     {
         preg_match('/(unsigned)?\s*([a-z]+)(?:\(([0-9,]+)\))?/i', $column, $matches);
-        if (empty($matches)) {
-            throw new Exception(sprintf('Unable to parse column type from "%s"', $column));
-        }
+        
 
         $unsigned = false;
-        if (strtolower($matches[1]) === 'unsigned') {
+       
+		if (strtolower($matches[1]) === 'unsigned') {
             $unsigned = true;
         }
-
         $col = strtolower($matches[2]);
         $length = null;
         if (isset($matches[3])) {
@@ -107,6 +105,11 @@ class SqliteSchema extends BaseSchema
         }
         if (in_array($col, ['date', 'time', 'timestamp', 'datetime'])) {
             return ['type' => $col, 'length' => null];
+        }
+		
+		
+		if (empty($matches)) {
+        throw new Exception(sprintf('Unable to parse column type from "%s"', $column));
         }
 
         return ['type' => TableSchema::TYPE_TEXT, 'length' => null];

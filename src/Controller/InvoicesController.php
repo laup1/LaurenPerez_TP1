@@ -51,15 +51,15 @@ class InvoicesController extends AppController
      */
     public function index()
     {
-        $invoice = $this->Invoices->get(3);
-        $invoice->translation('es')->invoice_details = 'pagado';
-        $invoice->translation('en')->invoice_details = 'paid';
-        $this->Invoices->save($invoice);
+       // $invoice = $this->Invoices->get(3);
+       // $invoice->translation('es')->invoice_details = 'pagado';
+        //$invoice->translation('en')->invoice_details = 'paid';
+        //$this->Invoices->save($invoice);
         
-        $invoice2 = $this->Invoices->get(4);
-        $invoice2->translation('es')->invoice_details = 'hablar con la persona';
-        $invoice2->translation('en')->invoice_details = 'speak with the person';
-        $this->Invoices->save($invoice2);
+       // $invoice2 = $this->Invoices->get(4);
+        //$invoice2->translation('es')->invoice_details = 'hablar con la persona';
+        //$invoice2->translation('en')->invoice_details = 'speak with the person';
+        //$this->Invoices->save($invoice2);
       
         
         $this->paginate = [
