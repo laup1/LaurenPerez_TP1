@@ -43,6 +43,37 @@ class AgenciesTableTest extends TestCase
         $this->Agencies = TableRegistry::getTableLocator()->get('Agencies', $config);
     }
 
+    
+     public function testFindById() {
+         
+        $query = $this->Agencies->findById('5');
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $query->hydrate(false)->toArray();
+        $expected = [
+            [
+                
+                'id' => 4,
+                 'agencie_details' => 'agency1',
+                 'created' => 'null',
+                 'modified' => 'null',
+                 'user_id' => 5,
+                 'code_id' =>1,               
+                 'subcategory_id' => 0
+                
+                
+              
+            ],
+        ];
+        $this->assertNotEquals($expected, $result);
+     }
+
+    
+    
+    
+    
+    
+    
+    
     /**
      * tearDown method
      *

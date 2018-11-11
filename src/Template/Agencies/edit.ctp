@@ -5,25 +5,16 @@ $urlToLinkedListFilter = $this->Url->build([
     "_ext" => "json"
         ]);
 echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
-echo $this->Html->script('Agencies/add', ['block' => 'scriptBottom']);
+echo $this->Html->script('Agencies/edit', ['block' => 'scriptBottom']);
 ?>
+
 
 <?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Agency $agency
  */
-?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $agency->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $agency->id)]
-            )
-        ?>
-</nav>
+
 <div class="agencies form large-9 medium-8 columns content">
     <?= $this->Form->create($agency) ?>
     <fieldset>

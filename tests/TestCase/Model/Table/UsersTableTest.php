@@ -39,7 +39,29 @@ class UsersTableTest extends TestCase
         $config = TableRegistry::getTableLocator()->exists('Users') ? [] : ['className' => UsersTable::class];
         $this->Users = TableRegistry::getTableLocator()->get('Users', $config);
     }
-
+    
+     
+     /*public function testFindById() {
+        $query = $this->Users->findById('5')->first();
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $query->hydrate(false)->toArray();
+        $expected = [
+            [
+                
+                'id' => 5,
+                 'created' => '2018-10-09',
+                 'modified' => '2018-10-09',
+                 'username' => 'cryspelo',
+                 'email' =>'arhalltraste@hotmail.com',               
+                 'password' => '1234'
+                
+                
+              
+            ],
+        ];
+        $this->assertEquals($expected, $result);
+     }
+*/
     /**
      * tearDown method
      *
@@ -67,9 +89,40 @@ class UsersTableTest extends TestCase
      *
      * @return void
      */
+    
     public function testValidationDefault()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        
+        
+        /* $this->loadFixtures('Users');
+        $table = $this->getTableLocator()->get('users');
+        $user = $table->find()->where(['id' => 5])->first();
+        //$this->assertEquals(new Time('2007-03-17 01:16:23'), $user->created);
+        //$this->assertEquals(new Time('2007-03-17 01:18:31'), $user->updated);
+        
+         //$query = $this->Users->findById('5');
+        //$this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $user->hydrate(false)->toArray();
+        $expected = [
+            [
+                
+                'id' => 5,
+                 'created' => '2018-10-09',
+                 'modified' => '2018-10-09',
+                 'username' => 'cryspelo',
+                 'email' =>'arhalltraste@hotmail.com',               
+                 'password' => '1234'
+                
+                
+              
+            ],
+        ];
+  
+        $this->assertEquals(
+            'user@example.com',
+            Email::fromString('user@example.com')
+        );*/
+    
     }
 
     /**

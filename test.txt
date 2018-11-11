@@ -1,0 +1,6 @@
+Test de la !findById pour Agencies
+vendor\bin\phpunit --filter testFindById tests/Testcase/Model/Table/AgenciesTableTest
+
+Test de sécurité Users (add/edit/delete)
+vendor\bin\phpunit --filter testEditNonIdentifie tests/Testcase/Controller/UsersControllerTest
+vendor\bin\phpunit --filter testDeleteNonIdentifie tests/Testcase/Controller/UsersControllerTest

@@ -1433,3 +1433,15 @@ Stack Trace:
 #14 {main}
 
 
+2018-11-11 17:13:22 Error: [ParseError] syntax error, unexpected ''subcategory_id'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\tests\TestCase\Model\Table\AgenciesTableTest.php on line 59
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\phpunit\phpunit\src\Util\Fileloader.php(48): PHPUnit\Util\Fileloader::load('C:\\Program File...')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\phpunit\phpunit\src\Runner\StandardTestSuiteLoader.php(43): PHPUnit\Util\Fileloader::checkAndLoad('tests/Testcase/...')
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\phpunit\phpunit\src\Runner\BaseTestRunner.php(130): PHPUnit\Runner\StandardTestSuiteLoader->load('tests/Testcase/...', 'tests/Testcase/...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\phpunit\phpunit\src\Runner\BaseTestRunner.php(73): PHPUnit\Runner\BaseTestRunner->loadSuiteClass('tests/Testcase/...', '')
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\phpunit\phpunit\src\TextUI\Command.php(169): PHPUnit\Runner\BaseTestRunner->getTest('tests/Testcase/...', '', Array)
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#7 {main}
+
+

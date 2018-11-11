@@ -29,21 +29,22 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `agencies` (
   `id` int(11) NOT NULL,
   `agencie_details` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created` date NOT NULL,
-  `modified` date NOT NULL,
+  `created` date,
+  `modified` date,
   `user_id` int(11) NOT NULL,
-  `code_id` int(11) NOT NULL
+  `code_id` int(11) NOT NULL,
+   `subcategory_id` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Contenu de la table `agencies`
 --
 
-INSERT INTO `agencies` (`id`, `agencie_details`, `created`, `modified`, `user_id`, `code_id`) VALUES
-(4, 'agency1', '2018-10-09', '2018-10-09', 5, 1),
-(5, 'agency2', '2018-10-09', '2018-10-09', 6, 1),
-(6, 'agencie5', '2018-10-09', '2018-10-09', 5, 1),
-(7, 'agencie15', '2018-10-10', '2018-10-10', 5, 1);
+INSERT INTO `agencies` (`id`, `agencie_details`, `created`, `modified`, `user_id`, `code_id`, `subcategory_id`) VALUES
+(4, 'agency1', '2018-10-09', '2018-10-09', 5, 1,0),
+(5, 'agency2', '2018-10-09', '2018-10-09', 6, 1,0),
+(6, 'agencie5', '2018-10-09', '2018-10-09', 5, 1,0),
+(7, 'agencie15', '2018-10-10', '2018-10-10', 5, 1,0);
 
 -- --------------------------------------------------------
 

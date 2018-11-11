@@ -39,7 +39,23 @@ class FilesTableTest extends TestCase
         $config = TableRegistry::getTableLocator()->exists('Files') ? [] : ['className' => FilesTable::class];
         $this->Files = TableRegistry::getTableLocator()->get('Files', $config);
     }
+ public function testFindStatus() {
+        $query = $this->Files->find('status');
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $query->hydrate(false)->toArray();
+        $expected = [
+            [
+                'id' => 1,
+                'name' => 'Tulips.jpg',
+                'path' => 'Files/',               
+                'status' => true,
+                 'created' => '2018-10-09',
+                'modified' => '2018-10-09'
+            ]
+        ];
 
+        $this->assertEquals($expected, $result);
+    }
     /**
      * tearDown method
      *

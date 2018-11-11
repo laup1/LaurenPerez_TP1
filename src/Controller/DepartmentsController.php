@@ -14,9 +14,22 @@ class DepartmentsController extends AppController
 {
  public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['autocompletedemo', 'findDepartment', 'add', 'edit', 'delete']);
+        //$this->Auth->allow(['autocompletedemo', 'findDepartment', 'add', 'edit', 'delete']);
     }
     
+     public function isAuthorized($user) {
+        $action = $this->request->getParam('action');
+        // The add and tags actions are always allowed to logged in users.
+        if (in_array($action, ['autocompletedemo', 'findDepartment', 'add', 'edit', 'delete'])) {
+            return true;
+        }
+
+        // All other actions require a slug.
+        $id = $this->request->getParam('pass.0');
+        if (!$id) {
+            return false;
+        }
+     }
     public function findDepartment() {
 
         if ($this->request->is('ajax')) {

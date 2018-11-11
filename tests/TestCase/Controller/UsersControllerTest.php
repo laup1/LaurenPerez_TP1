@@ -9,6 +9,8 @@ use Cake\TestSuite\IntegrationTestCase;
  */
 class UsersControllerTest extends IntegrationTestCase
 {
+    
+   
 
     /**
      * Fixtures
@@ -19,6 +21,21 @@ class UsersControllerTest extends IntegrationTestCase
         'app.users',
         'app.agencies'
     ];
+    
+    
+     public function testEditNonIdentifie() {
+        // Pas de données de session définies.
+        $this->get('/users/edit/1');
+
+        $this->assertRedirect($_SERVER['HTTP_REFERER']);
+    }
+    
+    public function testDeleteNonIdentifie() {
+        // Pas de données de session définies.
+        $this->get('/users/delete/1');
+
+        $this->assertRedirect($_SERVER['HTTP_REFERER']);
+    }
 
     /**
      * Test index method
