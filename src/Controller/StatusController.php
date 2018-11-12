@@ -13,6 +13,20 @@ use Cake\I18n\I18n;
  */
 class StatusController extends AppController
 {
+    
+       public $paginate = [
+        'page' => 1,
+        'limit' => 10,
+        'maxLimit' => 100,
+        'fields' => [
+            'id', 'description_Status', 'created', 'modified'
+        ],
+        'sortWhitelist' => [
+            'id', 'description_Status', 'created', 'modified'
+        ]
+    ];
+    
+    
       public function isAuthorized($user) {
         $action = $this->request->getParam('action');
         // The add and tags actions are always allowed to logged in users.

@@ -64,6 +64,8 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     
      $routes->connect('/email',['controller'=>'Emails','action'=>'index']);
+     $routes->resources('Status');
+  
       
     
     /**
@@ -84,4 +86,5 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->fallbacks(DashedRoute::class);
 });
+   Router::prefix('Admin', function ($routes) { $routes->fallbacks('InflectedRoute'); });
  Plugin::routes();

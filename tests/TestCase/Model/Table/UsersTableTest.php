@@ -39,7 +39,7 @@ class UsersTableTest extends TestCase
         $config = TableRegistry::getTableLocator()->exists('Users') ? [] : ['className' => UsersTable::class];
         $this->Users = TableRegistry::getTableLocator()->get('Users', $config);
     }
-    
+
      
      /*public function testFindById() {
         $query = $this->Users->findById('5')->first();

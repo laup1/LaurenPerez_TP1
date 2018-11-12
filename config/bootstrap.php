@@ -68,6 +68,8 @@ use Cake\Utility\Security;
 try {
     Configure::config('default', new PhpConfig());
     Configure::load('app', 'default', false);
+   
+    
 } catch (\Exception $e) {
     exit($e->getMessage() . "\n");
 }
@@ -197,3 +199,10 @@ Type::build('timestamp')
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
+
+
+
+
+Plugin::load('Crud');
+
+//Plugin::load('ADmad/JwtAuth');

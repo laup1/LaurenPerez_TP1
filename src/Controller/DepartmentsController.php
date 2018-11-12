@@ -12,6 +12,8 @@ use App\Controller\AppController;
  */
 class DepartmentsController extends AppController
 {
+    
+ 
  public function initialize() {
         parent::initialize();
         //$this->Auth->allow(['autocompletedemo', 'findDepartment', 'add', 'edit', 'delete']);

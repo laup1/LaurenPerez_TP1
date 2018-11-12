@@ -1445,3 +1445,18 @@ Stack Trace:
 #7 {main}
 
 
+2018-11-11 22:42:16 Error: [Cake\Core\Exception\MissingPluginException] Plugin ADmad/JwtAuth could not be found. in C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'ADmad/JwtAuth',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('ADmad/JwtAuth')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\config\bootstrap.php(208): Cake\Core\Plugin::load('ADmad/JwtAuth')
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Application.php(49): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(191): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->bootstrap()
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#7 {main}
+
+
