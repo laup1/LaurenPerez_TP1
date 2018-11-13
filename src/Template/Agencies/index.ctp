@@ -28,6 +28,7 @@
                
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $agency->id]) ?>
+                     <?= $this->Html->link('(pdf)', ['action' => 'view', $agency->id . '.pdf']) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $agency->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $agency->id], ['confirm' => __('Are you sure you want to delete # {0}?', $agency->id)]) ?>
                     

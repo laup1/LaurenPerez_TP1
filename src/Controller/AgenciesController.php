@@ -16,6 +16,8 @@ class AgenciesController extends AppController
       public function initialize() {
         parent::initialize();
         $this->Auth->allow(['tags']);
+        
+        $this->loadComponent('RequestHandler');
     }
     
      public function isAuthorized($user) {
@@ -60,6 +62,7 @@ class AgenciesController extends AppController
         $agencies = $this->paginate($this->Agencies);
 
         $this->set(compact('agencies'));
+         $this->set('_serialize', ['agencies']);
     }
 
     /**
@@ -76,6 +79,7 @@ class AgenciesController extends AppController
         ]);
 
         $this->set('agency', $agency);
+         $this->set('_serialize', ['agency']);
     }
 
     /**
@@ -121,7 +125,9 @@ class AgenciesController extends AppController
         $tags = $this->Agencies->Tags->find('list', ['limit' => 200]);
          $user = $this->Auth->user();
         $this->set(compact('agency', 'users', 'codes', 'files', 'tags', 'user', 'subcategories', 'categories'));
-    }
+     $this->set('_serialize', ['agency', 'users', 'codes', 'files', 'tags', 'user', 'subcategories', 'categories']);
+        
+            }
 
     /**
      * Edit method
@@ -144,12 +150,27 @@ class AgenciesController extends AppController
             }
             $this->Flash->error(__('The agency could not be saved. Please, try again.'));
         }
+        
+        // Bâtir la liste des catégories  
+        $this->loadModel('Categories');
+        $categories = $this->Categories->find('list', ['limit' => 200]);
+
+        // Extraire le id de la première catégorie
+        $categories = $categories->toArray();
+        reset($categories);
+        $category_id = key($categories);
+
+        // Bâtir la liste des sous-catégories reliées à cette catégorie
+        $subcategories = $this->Agencies->Subcategories->find('list', [
+            'conditions' => ['Subcategories.category_id' => $category_id],
+        ]);
+        
         $users = $this->Agencies->Users->find('list', ['limit' => 200]);
         $codes = $this->Agencies->Codes->find('list', ['limit' => 200]);
         $files = $this->Agencies->Files->find('list', ['limit' => 200]);
         $tags = $this->Agencies->Tags->find('list', ['limit' => 200]);
           $user = $this->Auth->user();
-        $this->set(compact('agency', 'users', 'codes', 'files', 'tags', 'user'));
+         $this->set(compact('agency', 'users', 'codes', 'files', 'tags', 'user', 'subcategories', 'categories'));
     }
 
     /**

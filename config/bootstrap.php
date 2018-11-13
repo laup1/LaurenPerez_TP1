@@ -43,6 +43,7 @@ use Cake\Log\Log;
 use Cake\Mailer\Email;
 use Cake\Utility\Inflector;
 use Cake\Utility\Security;
+use Cake\Network\Request;
 
 /**
  * Uncomment block of code below if you want to use `.env` file during development.
@@ -200,9 +201,24 @@ Type::build('timestamp')
 //Inflector::rules('uninflected', ['dontinflectme']);
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
 
+Plugin::load('CakePdf', ['bootstrap' => true]);
 
-
+Configure::write('CakePdf', [
+    'engine' => [
+        'className' => 'CakePdf.WkHtmlToPdf',
+        'binary' => 'C:\\wkhtmltopdf\\bin\\wkhtmltopdf.exe'
+    ],
+    'margin' => [
+        'bottom' => 15,
+        'left' => 50,
+        'right' => 30,
+        'top' => 45
+    ],
+    'orientation' => 'landscape',
+    'download' => true
+]);
 
 Plugin::load('Crud');
+Plugin::load('CakePdf', ['bootstrap' => true]);
 
 //Plugin::load('ADmad/JwtAuth');

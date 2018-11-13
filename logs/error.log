@@ -11737,3 +11737,907 @@ Stack Trace:
 #14 {main}
 
 
+2018-11-12 04:01:24 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 04:01:29 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status/5
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 04:21:25 Error: [Cake\View\Exception\MissingTemplateException] Template file "Layout\TwitterBootstrap\dashboard.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layout\\TwitterBootstrap\\dashboard.ctp',
+)
+Request URL: /status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1044): Cake\View\View->_getViewFileName('Layout\\TwitterB...')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Template\Layout\default.ctp(53): Cake\View\View->extend('/Layout/Twitter...')
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1240): include('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(850): Cake\View\View->_render('C:\\Program File...')
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(808): Cake\View\View->renderLayout('', 'default')
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StatusController))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#24 {main}
+
+
+2018-11-12 04:21:42 Error: [Cake\View\Exception\MissingTemplateException] Template file "Layout\TwitterBootstrap\dashboard.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layout\\TwitterBootstrap\\dashboard.ctp',
+)
+Request URL: /
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1044): Cake\View\View->_getViewFileName('Layout\\TwitterB...')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Template\Layout\default.ctp(53): Cake\View\View->extend('/Layout/Twitter...')
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1240): include('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(850): Cake\View\View->_render('C:\\Program File...')
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(808): Cake\View\View->renderLayout('', 'default')
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#24 {main}
+
+
+2018-11-12 04:24:20 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 04:29:07 Error: [Error] Call to undefined method App\View\AppView::span()
+Request URL: /status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1240): include()
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(850): Cake\View\View->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(808): Cake\View\View->renderLayout('', 'default')
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\StatusController))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-11-12 19:59:18 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status/1
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 19:59:43 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status/1
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:34:26 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:42:38 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:42:40 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:42:41 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:42:42 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:42:42 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:53:18 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:53:25 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:53:27 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:53:36 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:53:41 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 20:53:52 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status/5
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 21:33:57 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 21:34:00 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 21:34:01 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 21:45:34 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 21:45:37 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 21:45:41 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status/1
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 21:45:48 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Incohérence de jeton CSRF.
+Request URL: /api/status/5
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/status
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(119): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(105): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2018-11-12 23:21:50 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /agencies/edit/4
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/users/login?redirect=%2Fagencies%2Fedit%2F4
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\AgenciesController))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2018-11-12 23:23:21 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /agencies/edit/4
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/users/login?redirect=%2Fagencies%2Fedit%2F4
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\AgenciesController))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2018-11-12 23:24:18 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /agencies/edit/4
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/users/login?redirect=%2Fagencies%2Fedit%2F4
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\AgenciesController))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2018-11-12 23:24:33 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /agencies/edit/4
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/users/login?redirect=%2Fagencies%2Fedit%2F4
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\AgenciesController))
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2018-11-12 23:37:16 Error: [InvalidArgumentException] The Users association is not defined on Codes.
+Request URL: /codes/view/1
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/agencies/view/4
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Users')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(365): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\CodesTable), 'Users', Array, Array)
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\CodesTable))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\CodesTable))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\CodesTable), true)
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(107): Cake\ORM\Query->sql()
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Sqlite->prepare(Object(Cake\ORM\Query))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Controller\CodesController.php(67): Cake\ORM\Table->get(Array, Array)
+#21 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\CodesController->view('1')
+#22 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CodesController))
+#24 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-11-12 23:37:44 Error: [InvalidArgumentException] The Users association is not defined on Codes.
+Request URL: /codes/view/1
+Referer URL: http://localhost/tp%20que%20sirve/LaurenPerez_tp1/agencies/view/4
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(539): Cake\ORM\Table->getAssociation('Users')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(365): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\CodesTable), 'Users', Array, Array)
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(495): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\CodesTable))
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\CodesTable))
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1157): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\CodesTable), true)
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1106): Cake\ORM\Query->_transformQuery()
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(107): Cake\ORM\Query->sql()
+#7 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Sqlite->prepare(Object(Cake\ORM\Query))
+#8 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(332): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#12 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#15 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Controller\CodesController.php(67): Cake\ORM\Table->get(Array, Array)
+#21 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\CodesController->view('1')
+#22 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CodesController))
+#24 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-11-13 00:11:56 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakePdf could not be found. in C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'CakePdf',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('CakePdf')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\config\bootstrap.php(219): Cake\Core\Plugin::load('CakePdf', Array)
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Application.php(57): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 00:13:45 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakePdf could not be found. in C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'CakePdf',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('CakePdf')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\config\bootstrap.php(219): Cake\Core\Plugin::load('CakePdf', Array)
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Application.php(57): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 00:13:47 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakePdf could not be found. in C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'CakePdf',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('CakePdf')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\config\bootstrap.php(219): Cake\Core\Plugin::load('CakePdf', Array)
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Application.php(57): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 00:13:49 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakePdf could not be found. in C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'CakePdf',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('CakePdf')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\config\bootstrap.php(219): Cake\Core\Plugin::load('CakePdf', Array)
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Application.php(57): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 00:14:03 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakePdf could not be found. in C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'CakePdf',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('CakePdf')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\config\bootstrap.php(219): Cake\Core\Plugin::load('CakePdf', Array)
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Application.php(57): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 00:18:58 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakePdf could not be found. in C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'CakePdf',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('CakePdf')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\config\bootstrap.php(203): Cake\Core\Plugin::load('CakePdf', Array)
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Application.php(57): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+
+2018-11-13 00:23:15 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakePdf could not be found. in C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\PluginCollection.php on line 127
+Exception Attributes: array (
+  'plugin' => 'CakePdf',
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Core\Plugin.php(134): Cake\Core\PluginCollection->findPath('CakePdf')
+#1 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\config\bootstrap.php(204): Cake\Core\Plugin::load('CakePdf', Array)
+#2 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\src\Application.php(57): Cake\Http\BaseApplication->bootstrap()
+#4 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(121): App\Application->bootstrap()
+#5 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Server->bootstrap()
+#6 C:\Program Files (x86)\Ampps\Ampps\www\tp que sirve\LaurenPerez_tp1\webroot\index.php(40): Cake\Http\Server->run()
+#7 {main}
+
+

@@ -15,8 +15,9 @@ echo $this->Html->script('Agencies/edit', ['block' => 'scriptBottom']);
  * @var \App\Model\Entity\Agency $agency
  */
 
+?>
 <div class="agencies form large-9 medium-8 columns content">
-    <?= $this->Form->create($agency) ?>
+    <? $this->Form->create($agency) ?>
     <fieldset>
         <legend><?= __('Edit Agency') ?></legend>
         <?php

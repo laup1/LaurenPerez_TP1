@@ -116,6 +116,7 @@ class StatusController extends AppController
         }
         
         $this->set(compact('status'));
+                 $this->set('_serialize', ['status']);
     }
 
     /**
