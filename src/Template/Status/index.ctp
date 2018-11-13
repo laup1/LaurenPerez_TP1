@@ -1,5 +1,5 @@
 <?php
-$urlToRestApi = $this->Url->build('/api/status', true);
+$urlToRestApi = $this->Url->build('/status', true);
 echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
 echo $this->Html->script('Status/index', ['block' => 'scriptBottom']);
 ?>
@@ -59,7 +59,7 @@ echo $this->Html->script('Status/index', ['block' => 'scriptBottom']);
                             <td><?php echo $statu['description_Status']; ?></td>
                            
                             <td>
-                                <a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editCocktail('<?php echo $statu['id']; ?>')"></a>
+                                <a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editStatus('<?php echo $statu['id']; ?>')"></a>
                                 <a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete data?') ? statusAction('delete', '<?php echo $statu['id']; ?>') : false;"></a>
                             </td>
                         </tr>

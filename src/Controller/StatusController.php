@@ -18,9 +18,9 @@ class StatusController extends AppController
         'page' => 1,
         'limit' => 10,
         'maxLimit' => 100,
-        'fields' => [
-            'id', 'description_Status', 'created', 'modified'
-        ],
+      //  'fields' => [
+         //   'id', 'description_Status', 'created', 'modified'
+      //  ],
         'sortWhitelist' => [
             'id', 'description_Status', 'created', 'modified'
         ]
