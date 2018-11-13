@@ -221,4 +221,5 @@ Configure::write('CakePdf', [
 Plugin::load('Crud');
 Plugin::load('CakePdf', ['bootstrap' => true]);
 
-//Plugin::load('ADmad/JwtAuth');
+Plugin::load('BootstrapUI');
+Plugin::load('ADmad/JwtAuth');

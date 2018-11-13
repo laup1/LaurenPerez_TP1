@@ -15,7 +15,20 @@
         <p>login: permet de se connecter pour avoir accès au fonctionalités du site, en tant qu'agencie ou admin</p>
         <p> Agencie: on peut voir ce qui est visible au visiteurs sans se conecter(factures, agencies, images, codes) et ajouter des factures, televerser images, consulter et modifier son information. une agence est liée a un utilisateur, une image, et plusieurs factures</p>
         <p> facture: une facture est liée a une agence, a une code et a une status</p>
-        
+       <p> <a title=" lien gitHub " href="https://github.com/laup1/php">
+               lien vers github </a></p>  
+               
+               <p><?= $this->Html->link(__('coverage'), ['action' => 'coverage']) ?> </p>
+               
+               <h3> TP2</h3>
+               <p> Listes dépendants: lien dans la barre de menu vers l'ajout des agencies. listes disponibles aussi dans la modification d'un agence</br>
+                   Autocomplete: lien dans la barre de menu pour chercher des departements</br>
+                   monopage: lien dans la barre de menu pour la table status</br>
+                   Affichage sous forme pdf pour les agencies(index)<br/>
+                 
+                   
+               </p>
+                       
         
         <p>
             base de données multilingue pour table Invoice et status </br>
@@ -29,8 +42,16 @@
             validation email, champs vides et elements uniques pour le status
         </p>
         
+        
+        
+        <?php echo $this->Html->image('Files/' . 'bd.png', [
+                                "alt" => 'bd actuel',  ]);?>
+        
       <?php echo $this->Html->image('Files/' . 'bd.png', [
                                 "alt" => 'bd actuel',  ]);?>
+        
+        
+   
 	
 	<p> <a title=" diagramme original " href="http://www.databaseanswers.org/data_models/advertising_agencies/index.html">
                 Diagramme original </a></p>  

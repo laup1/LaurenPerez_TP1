@@ -15,7 +15,7 @@ class UsersController extends AppController
 {
    public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['logout', 'add', 'menu']);
+        $this->Auth->allow(['logout', 'add', 'menu','coverage']);
     }
     
         public function isAuthorized($user) {        
@@ -179,4 +179,13 @@ class UsersController extends AppController
            
           
     }
+    
+        public function coverage() {       
+                          
+       // return $this->redirect('\src\Template\Users\aPropos.php'); 
+                   //return $this->redirect(['/Users/aPropos.php']);
+              
+                          
+           
+        }
 }

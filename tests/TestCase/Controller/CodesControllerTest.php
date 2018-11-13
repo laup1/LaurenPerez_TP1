@@ -25,10 +25,7 @@ class CodesControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    public function testIndex()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
+   
 
     /**
      * Test view method
@@ -69,4 +66,39 @@ class CodesControllerTest extends IntegrationTestCase
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
+    
+    
+     public function testIndex()
+    {
+        $this->get('/codes');
+
+        $this->assertResponseOk();
+        // More asserts.
+    }
+     public function testIndexQueryData()
+    {
+        $this->get('/codes?page=1');
+
+        $this->assertResponseOk();
+        // More asserts.
+    }
+
+
+
+   /* public function testIndexPostData()
+    {
+        $data = [
+            'id' => 1,
+            'code_description' => 'gouvernement',
+            'created' => '2018-08-27',
+            'modified' => '2018-08-27',
+           
+        ];
+        $this->post('/codes', $data);
+
+        $this->assertResponseSuccess();
+        $articles = TableRegistry::get('Codes');
+        $query = $articles->find()->where(['title' => $data['title']]);
+        $this->assertEquals(1, $query->count());
+    }*/
 }

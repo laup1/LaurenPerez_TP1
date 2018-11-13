@@ -27,15 +27,36 @@ class UsersControllerTest extends IntegrationTestCase
         // Pas de données de session définies.
         $this->get('/users/edit/1');
 
-        $this->assertRedirect($_SERVER['HTTP_REFERER']);
+        $this->assertRedirect(['controller' => 'Users', 'action' => 'login']);
     }
     
     public function testDeleteNonIdentifie() {
         // Pas de données de session définies.
         $this->get('/users/delete/1');
 
-        $this->assertRedirect($_SERVER['HTTP_REFERER']);
+        $this->assertRedirect(['controller' => 'Users', 'action' => 'login']);
     }
+    
+   /* public function testAddAuthenticated()
+{
+    // Set session data
+    $this->session([
+        'Auth' => [
+            'User' => [
+               'id' => 5,
+                 'created' => '2018-10-09',
+                 'modified' => '2018-10-09',
+                 'username' => 'cryspelo',
+                 'email' =>'arhalltraste@hotmail.com',               
+                 'password' => '1234'
+            ]
+        ]
+    ]);
+    $this->get('/articles/add');
+
+    $this->assertResponseOk();
+    // Other assertions.
+}/*
 
     /**
      * Test index method

@@ -24,6 +24,14 @@ use Cake\Validation\Validator;
  */
 class FilesTable extends Table
 {
+    
+    public function findstatus(Query $query, array $options)
+    {
+        $query->where([
+            $this->alias() . '.status' => 1
+        ]);
+        return $query;
+    }
 
     /**
      * Initialize method

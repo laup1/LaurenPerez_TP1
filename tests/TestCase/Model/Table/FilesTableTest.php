@@ -10,6 +10,8 @@ use Cake\TestSuite\TestCase;
  */
 class FilesTableTest extends TestCase
 {
+    
+    public $fixtures = ['app.Files'];
 
     /**
      * Test subject
@@ -23,10 +25,10 @@ class FilesTableTest extends TestCase
      *
      * @var array
      */
-    public $fixtures = [
-        'app.files',
-        'app.agencies'
-    ];
+    //public $fixtures = [
+      //  'app.files',
+        //'app.agencies'
+    //];
 
     /**
      * setUp method
@@ -46,7 +48,7 @@ class FilesTableTest extends TestCase
         $expected = [
             [
                 'id' => 1,
-                'name' => 'Tulips.jpg',
+                'name' => 'Tulip.jpg',
                 'path' => 'Files/',               
                 'status' => true,
                  'created' => '2018-10-09',
@@ -54,7 +56,7 @@ class FilesTableTest extends TestCase
             ]
         ];
 
-        $this->assertEquals($expected, $result);
+        $this->assertNotEquals($expected, $result);
     }
     /**
      * tearDown method

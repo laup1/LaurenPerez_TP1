@@ -52,7 +52,26 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
+              
+                <?php
+                 $this->extend('/Layout/TwitterBootstrap/dashboard');
+        $this->start('tb_sidebar');
+            ?>
+    <div class="dropdown ">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <?= __("Actions") ?>
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <?= $this->fetch('tb_actions') ?>
+    </ul>
+    </div>
+    <?php
+    $this->end();
+    ?>
+                
+                
             </li>
         </ul>        
         <div class="top-bar-section">
@@ -69,6 +88,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         $this->Html->link('Autocomplete', [
                             'controller' => 'Departments',
                             'action' => 'autocompletedemo'
+                        ]);
+                        ?>
+                    </li>
+                    
+                     <li><?=
+                        $this->Html->link('monopage', [
+                            'controller' => 'Status',
+                            'action' => 'index'
                         ]);
                         ?>
                     </li>
@@ -118,23 +145,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     
        <?php
     $this->extend('/Layout/TwitterBootstrap/dashboard');
-
-
     $this->start('tb_actions');
     ?>
-                <h1><a href="#"><?= $this->fetch('title') ?></a></h1>
-            
-                <li>
-        
-        
-        <?=
-    $this->Html->link('Section publique en JS', [
-        'prefix' => false,
-        'controller' => 'Users',
-        'action' => 'index'
-    ]);
-    ?>
-</li> 
+    <h1><a href="#"><?= $this->fetch('title') ?></a></h1>            
+              
       <li><?= $this->Html->link(__('List Agencies'), ['controller' => 'Agencies', 'action' => 'index']) ?></li>
       <li><?= $this->Html->link(__('List Invoices'), ['controller' => 'Invoices', 'action' => 'index']) ?></li>
       <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>      
@@ -182,26 +196,22 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                if ($loguser['type'] === 'admin')                 
               echo  $this->Html->link(__('New Code'), ['controller' => 'Codes', 'action' => 'add']) ?>
        </li>
-            
+             
+       <li> <?=$this->Html->link('Section publique en JS', [
+        'prefix' => false,
+        'controller' => 'Users',
+        'action' => 'index'
+    ]);
+    ?>
+</li> 
        
        
   <?php
 $this->end();
 
-$this->start('tb_sidebar');
+
 ?>
-<div class="dropdown hidden-xs">
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        <?= __("Actions") ?>
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-        <?= $this->fetch('tb_actions') ?>
-    </ul>
-</div>
-<?php
-$this->end();
-?>
+
        
        
     <?= $this->Flash->render() ?>

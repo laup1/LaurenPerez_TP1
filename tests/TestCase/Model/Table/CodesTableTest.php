@@ -10,6 +10,7 @@ use Cake\TestSuite\TestCase;
  */
 class CodesTableTest extends TestCase
 {
+    
 
     /**
      * Test subject
@@ -38,6 +39,7 @@ class CodesTableTest extends TestCase
         parent::setUp();
         $config = TableRegistry::getTableLocator()->exists('Codes') ? [] : ['className' => CodesTable::class];
         $this->Codes = TableRegistry::getTableLocator()->get('Codes', $config);
+
     }
 
     /**
@@ -50,6 +52,9 @@ class CodesTableTest extends TestCase
         unset($this->Codes);
 
         parent::tearDown();
+        
+        // Set cookies
+
     }
 
     /**
@@ -71,4 +76,6 @@ class CodesTableTest extends TestCase
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
+    
+    
 }
