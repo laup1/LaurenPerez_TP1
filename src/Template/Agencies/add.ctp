@@ -8,6 +8,13 @@ echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedList
 echo $this->Html->script('Agencies/add', ['block' => 'scriptBottom']);
 ?>
 
+<nav class="large-3 medium-4 columns" id="actions-sidebar">
+    <ul class="side-nav">
+        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('List Agencies'), ['action' => 'index']) ?></li>
+    </ul>
+</nav>
+
 
 
 <?php

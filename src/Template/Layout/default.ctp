@@ -99,6 +99,17 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         ]);
                         ?>
                     </li>
+                    
+                      <li><?= $this->Html->link(__('PDF'), ['controller' => 'Agencies', 'action' => 'index']) ?></li>
+                      
+                         <li><?=
+                    $this->Html->link('Section Admin en PHP', [
+                        'prefix' => 'admin',
+                        'controller' => 'Status',
+                        'action' => 'index'
+                    ]);
+                    ?>
+                </li>
                 
                  <li>
                     <?php

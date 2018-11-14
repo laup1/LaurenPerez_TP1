@@ -10,11 +10,11 @@ class StatusController extends AppController {
         'page' => 1,
         'limit' => 10,
         'maxLimit' => 1000,
-        'contain' => ['Status'],
-        'conditions' => [
-            'Status.description_Status !=' => '',
+        //'contain' => ['Status'],
+        //'conditions' => [
+          //  'Status.description_Status !=' => '',
            
-        ],
+       // ],
       
           'sortWhitelist' => [
             'id', 'description_Status', 'created', 'modified'
@@ -28,11 +28,11 @@ class StatusController extends AppController {
     }
 
 
-    public function beforeFilter(\Cake\Event\Event $event){
-        parent::beforeFilter($event);
+  //  public function beforeFilter(\Cake\Event\Event $event){
+    //    parent::beforeFilter($event);
 
    
-    }
+    //}
 
     /**
      * Index method
@@ -40,7 +40,7 @@ class StatusController extends AppController {
      * @return \Cake\Http\Response|void
      */
     public function index() {
-        $regions = $this->paginate($this->Status);
+        $status = $this->paginate($this->Status);
 
         $this->set(compact('status'));
         $this->set('_serialize', ['status']);
@@ -54,8 +54,8 @@ class StatusController extends AppController {
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function view($id = null) {
-        $region = $this->Status->get($id, [
-            'contain' => ['Status']
+        $status = $this->Status->get($id, [
+            'contain' => []
         ]);
 
         $this->set('status', $status);
@@ -68,17 +68,17 @@ class StatusController extends AppController {
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
     public function add() {
-        $region = $this->Regions->newEntity();
+        $status = $this->Status->newEntity();
         if ($this->request->is('post')) {
-            $region = $this->Regions->patchEntity($status, $this->request->getData());
-            if ($this->Regions->save($status)) {
+            $status = $this->Regions->patchEntity($status, $this->request->getData());
+            if ($this->Status->save($status)) {
                 $this->Flash->success(__('The status has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The status could not be saved. Please, try again.'));
         }
-        $countries = $this->Countries->find('list', []);
+       
         $this->set(compact('status'));
         $this->set('_serialize', ['status']);
     }

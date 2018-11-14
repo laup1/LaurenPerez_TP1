@@ -15,16 +15,24 @@
         <p>login: permet de se connecter pour avoir accès au fonctionalités du site, en tant qu'agencie ou admin</p>
         <p> Agencie: on peut voir ce qui est visible au visiteurs sans se conecter(factures, agencies, images, codes) et ajouter des factures, televerser images, consulter et modifier son information. une agence est liée a un utilisateur, une image, et plusieurs factures</p>
         <p> facture: une facture est liée a une agence, a une code et a une status</p>
-       <p> <a title=" lien gitHub " href="https://github.com/laup1/php">
-               lien vers github </a></p>  
+       <p> <a title=" lien gitHub " href="https://github.com/laup1/LaurenPerez_TP1">
+               lien vers github </a></p>                 
                
-               <p><?= $this->Html->link(__('coverage'), ['action' => 'coverage']) ?> </p>
+             
                
+                           
+          
+               
+         
                <h3> TP2</h3>
                <p> Listes dépendants: lien dans la barre de menu vers l'ajout des agencies. listes disponibles aussi dans la modification d'un agence</br>
                    Autocomplete: lien dans la barre de menu pour chercher des departements</br>
                    monopage: lien dans la barre de menu pour la table status</br>
                    Affichage sous forme pdf pour les agencies(index)<br/>
+                   affichage admin pour les status dans la barre de menu</br>
+                   menu bootstrap ne marche pas je n'ai pas reussi à les deboguer, je pense c'est un erreur avec le css ou js le code est dans le template view et aussi dans
+                   Layout/Default(test pour deboguer)
+                   J'ai fait des test unitaires mais j'ai eu des problemes avec phpunit mais j'ai quand meme reussi à faire quelques uns avec la page de coverage qui est dans le webroot. Voici le lien.
                  
                    
                </p>
