@@ -12,6 +12,35 @@ use App\Controller\AppController;
  */
 class CategoriesController extends AppController
 {
+        public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['index', 'view', 'add', 'edit', 'delete', 'getCategories']);
+        }
+    public $paginate = [
+        'page' => 1,
+        'limit' => 25,
+        'maxLimit' => 50,
+        'sortWhitelist' => [
+            'id', 'name'
+        ]
+     ];
+ 
+    
+    public function getCategories() {
+       // $this->autoRender = false; // avoid to render view
+
+        $categories = $this->Categories->find('all', [
+            'contain' => ['Subcategories'  ],
+        ]);
+
+       $categoriesJ = json_encode($categories);
+       $this->response->type('json');
+       $this->response->body($categoriesJ);
+        
+         // $this->set(compact('categories'));
+       // $this->set('_serialize', ['categories']);
+
+    }
 
     /**
      * Index method

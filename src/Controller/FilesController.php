@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Filesystem\File;
 
 /**
  * Files Controller
@@ -27,7 +28,7 @@ public function isAuthorized($user) {
     public function index()
     {
         $files = $this->paginate($this->Files);
-
+        //$user = $this->Auth->user();
         $this->set(compact('files'));
     }
 
@@ -45,6 +46,7 @@ public function isAuthorized($user) {
         ]);
 
         $this->set('file', $file);
+         $this->set('user', $user);
     }
 
     /**
@@ -52,16 +54,21 @@ public function isAuthorized($user) {
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-  public function add() {
+  /*public function add() {
         $file = $this->Files->newEntity();
-        if ($this->request->is('post')) {
-            if (!empty($this->request->data['name']['name'])) {
-                $fileName = $this->request->data['name']['name'];
+        //if ($this->request->is('post')) {
+            //if (!empty($this->request->data['name']['name'])) {
+              //  $fileName = $this->request->data['name']['name'];
+        if ($this->request->is('post') or $this->request->is('ajax')) {
+            if (!empty($this->request->data['file']['name'])) {
+                $fileName = $this->request->data['file']['name'];
+        
                 $uploadPath = 'Files/';
                 $uploadFile = $uploadPath . $fileName;
-                if (move_uploaded_file($this->request->data['name']['tmp_name'], 'img/' . $uploadFile)) {
-                    $file = $this->Files->patchEntity($file, $this->request->getData());
-                    $file->name = $fileName;
+                //if (move_uploaded_file($this->request->data['name']['tmp_name'], 'img/' . $uploadFile)) {
+                   // $file = $this->Files->patchEntity($file, $this->request->getData());
+                 if (move_uploaded_file($this->request->data['file']['tmp_name'], 'img/' . $uploadFile)) {   
+                $file->name = $fileName;
                     $file->path = $uploadPath;
                     if ($this->Files->save($file)) {
                         $this->Flash->success(__('File has been uploaded and inserted successfully.'));
@@ -69,14 +76,49 @@ public function isAuthorized($user) {
                         $this->Flash->error(__('Unable to upload file, please try again.'));
                     }
                 } else {
-                    $this->Flash->error(__('Unable to save file, please try again.'));
+                    $this->Flash->error(__('Unable to save/upload file, please try again.'));
                 }
             } else {
                 $this->Flash->error(__('Please choose a file to upload.'));
             }
         }
-        $agencies = $this->Files->Agencies->find('list', ['limit' => 200]);
-        $this->set(compact('file', 'agencies'));
+       // $agencies = $this->Files->Agencies->find('list', ['limit' => 200]);
+        //$this->set(compact('file', 'agencies'));
+         $this->set(compact('file'));
+        $this->set('_serialize', ['file']);
+    }*/
+    
+      public function add() {
+        $file = $this->Files->newEntity();
+        if ($this->request->is('post') or $this->request->is('ajax')) {
+            //debug($this->request->data);
+            //die();
+            if (!empty($this->request->data['file']['name'])) {
+                //debug($this->request->data);
+                //die();
+                $fileName = $this->request->data['file']['name'];
+                $uploadPath = 'Files/';
+                $uploadFile = $uploadPath . $fileName;
+                if (move_uploaded_file($this->request->data['file']['tmp_name'], 'img/' . $uploadFile)) {
+                    //$file = $this->Files->patchEntity($file, $this->request->getData());
+                    $file->name = $fileName;
+                    $file->path = $uploadPath;
+                    $file->status = 1;
+                    if ($this->Files->save($file)) {
+                        $this->Flash->success(__('File has been uploaded and inserted successfully.'));
+                    } else {
+                        $this->Flash->error(__('Unable to upload file, please try again.'));
+                    }
+                } else {
+                    $this->Flash->error(__('Unable to upload file, please try again.'));
+                }
+            } else {
+                $this->Flash->error(__('Please choose a file to upload.'));
+            }
+        }
+        $articles = $this->Files->Articles->find('list', ['limit' => 200]);
+        $this->set(compact('file', 'articles'));
+        $this->set('_serialize', ['file']);
     }
 
 

@@ -12,14 +12,26 @@
 	420-4A4 MO Web et Bases de données.</br>
 	Hiver 2018, Collège Montmorency</br
 	</p>
-        <p>login: permet de se connecter pour avoir accès au fonctionalités du site, en tant qu'agencie ou admin</p>
-        <p> Agencie: on peut voir ce qui est visible au visiteurs sans se conecter(factures, agencies, images, codes) et ajouter des factures, televerser images, consulter et modifier son information. une agence est liée a un utilisateur, une image, et plusieurs factures</p>
-        <p> facture: une facture est liée a une agence, a une code et a une status</p>
+       
        <p> <a title=" lien gitHub " href="https://github.com/laup1/LaurenPerez_TP1">
-               lien vers github </a></p>                 
+               lien vers github </a></p>  
                
+               
+               <p> .L'intérêt du prototype d'application web :</br>
+                   Le but de cette prototype est une application web qui permet de gérer des entreprises de marketing (gerer les factures, les agences, etc)</br>
+                   L'objectif est la réalisation d'une application web qui reponds aux  fonctionnements demandeés par le professeur et le but final est un application fonctionnel qui respecté et implementé les fonctionnalités demandés, donc qui permet de gérer les agences. Cella veut dire gérer les factures, les images de la agence, savoir si les clients ont payée, etc. .</br>
+  
+               </p>
              
-               
+               <p> fonctionnement du démarrage de session et du changement de mot de passe</br>                
+                   demarrage de session api et captcha et  listes liées et du modèle "CRUD" monopage </br>
+                   j'ai tout code mais je n'ai pas reussi â le faire marcher.</br>
+                   le demarage session api et le monopage sont dans monopage  dans la barre de menu.</br>
+                   vue que je n'ai pas reussi la connection dans le monopage j'ai fait aussi le captcha dans le login normal.
+                   </br> les listes dynamiques sont dans la barre de menu mais ils donnent l'erreur: Error: [$controller:ctrlreg] The controller with the name 'CategoriesController' is not registered. mais j'ai tout mit comme dans l'example.</br>
+                   Le fonctionnement du cliquer-glisser pour ajouter une image à l'application est dans la barre de menu option Drop files 
+                   
+               </p>
                            
           
                
@@ -36,6 +48,10 @@
                  
                    
                </p>
+               
+                <p>login: permet de se connecter pour avoir accès au fonctionalités du site, en tant qu'agencie ou admin</p>
+        <p> Agencie: on peut voir ce qui est visible au visiteurs sans se conecter(factures, agencies, images, codes) et ajouter des factures, televerser images, consulter et modifier son information. une agence est liée a un utilisateur, une image, et plusieurs factures</p>
+        <p> facture: une facture est liée a une agence, a une code et a une status</p>
                        
         
         <p>

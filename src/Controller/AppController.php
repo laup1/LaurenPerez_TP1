@@ -41,9 +41,9 @@ class AppController extends Controller
                 'Crud.Delete'
             ],
             'listeners' => [
-                'Crud.Api',
-                'Crud.ApiPagination',
-                'Crud.ApiQueryLog'
+             'Crud.Api',
+              'Crud.ApiPagination',
+              'Crud.ApiQueryLog'
             ]
         ]
     ];
@@ -62,10 +62,11 @@ class AppController extends Controller
         parent::initialize();
          I18n::setLocale($this->request->session()->read('Config.language'));
 
-        $this->loadComponent('RequestHandler', [
-            'enableBeforeRedirect' => false,
-        ]);
+      // $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('RequestHandler', [
+             'enableBeforeRedirect' => false,
+         ]);
         
         $this->loadComponent('Auth', [
             // Added this line
@@ -90,7 +91,7 @@ class AppController extends Controller
 
         // Allow the display action so our PagesController
         // continues to work. Also enable the read only actions.
-        $this->Auth->allow(['display', 'view', 'index', 'changelang']);
+        $this->Auth->allow(['display', 'view', 'index', 'changelang',  'getByCategory', 'getSubcategoriesSortedByCategories', 'getCategories']);
 
         /*
          * Enable the following component for recommended CakePHP security settings.
@@ -109,4 +110,21 @@ class AppController extends Controller
         $this->request->session()->write('Config.language', $lang);
         return $this->redirect($this->request->referer());
     }
+    
+      public function beforeRender(Event $event) {
+        // Note: These defaults are just to get started quickly with development
+        // and should not be used in production. You should instead set "_serialize"
+        // in each action as required.
+        if (!array_key_exists('_serialize', $this->viewVars) &&
+                in_array($this->response->type(), ['application/json', 'application/xml'])
+        ) {
+            $this->set('_serialize', true);
+        }
+
+    }
+
+    public function beforeFilter(Event $event) {
+        $this->Auth->allow(['index', 'view', 'display', 'getByCategory', 'getSubcategoriesSortedByCategories', 'getCategories']);
+    }
+
 }

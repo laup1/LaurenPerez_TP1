@@ -32,6 +32,15 @@ class SubcategoriesController extends AppController
         $this->set('subcategories', $subcategories);
         $this->set('_serialize', ['subcategories']);
     }
+    
+    
+     public function getSubcategoriesSortedByCategories() {
+        $categories = $this->Subcategories->Categories->find('all', [
+            'contain' => ['Subcategories'],
+        ]);
+        $this->set('categories',$categories);
+        $this->set('_serialize', ['categories']);
+    }
     /**
      * Index method
      *
@@ -56,11 +65,20 @@ class SubcategoriesController extends AppController
      */
     public function view($id = null)
     {
+       // $subcategory = $this->Subcategories->get($id, [
+        //    'contain' => ['Categories']
+        //]);
+
+       // $this->set('subcategory', $subcategory);
+          $data = $this->request->input('json_decode');
+        //debug($data); die();
+        $id = $data->id;
         $subcategory = $this->Subcategories->get($id, [
-            'contain' => ['Categories']
+            'contain' => ['Categories', 'Agencies']
         ]);
 
         $this->set('subcategory', $subcategory);
+        $this->set('_serialize', ['subcategory']);
     }
 
     /**

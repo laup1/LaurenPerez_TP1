@@ -25,6 +25,9 @@ use Cake\Routing\Route\DashedRoute;
 
 
 Router::extensions(['json', 'xml']);
+ $routes->resources('Categories');
+ Router::connect('/api/users/register', ['controller' => 'Users', 'action' => 'add', 'prefix' => 'api']);
+$routes->resources('Users');
 
 Router::prefix('Admin', function ($routes) {
     $routes->fallbacks('InflectedRoute');
@@ -68,13 +71,18 @@ Router::scope('/', function (RouteBuilder $routes) {
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
+     $routes->resources('Users');
+      $routes->resources('Categories');
     $routes->connect('/', ['controller' => 'Users', 'action' => 'index']);
+   
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
     $routes->connect('/pages/*', ['controller' => 'Users', 'action' => 'index']);
-
+    $routes->connect('/add', ['controller' => 'Categories', 'action' => 'getCategories']);
+    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
+    
     
      $routes->connect('/email',['controller'=>'Emails','action'=>'index']);
     $routes->resources('Status');
@@ -110,4 +118,5 @@ Router::scope('/', function (RouteBuilder $routes) {
     Router::connect('/api/users/register', ['controller' => 'Users', 'action' => 'add', 'prefix' => 'api']);
     $routes->fallbacks('InflectedRoute');
 });
+
  Plugin::routes();

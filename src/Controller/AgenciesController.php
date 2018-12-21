@@ -93,9 +93,9 @@ class AgenciesController extends AppController
         if ($this->request->is('post')) {
             $agency = $this->Agencies->patchEntity($agency, $this->request->getData());
             
-             $user = $this->Auth->user();
+            // $user = $this->Auth->user();
             // Changed: Set the user_id from the session.
-           // $article->user_id = $this->Auth->user();
+           $agency->user_id = $this->Auth->user();
             
             if ($this->Agencies->save($agency)) {
                 $this->Flash->success(__('The agency has been saved.'));

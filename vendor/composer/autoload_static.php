@@ -25,6 +25,7 @@ class ComposerStaticInitd9d1e181ad33cc6ee4853f287711d238
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '31c52906bef21ac4e921163ce1106498' => __DIR__ . '/..' . '/captcha-com/cakephp-captcha/src/Support/helpers.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
     );
 
@@ -108,6 +109,7 @@ class ComposerStaticInitd9d1e181ad33cc6ee4853f287711d238
             'Cake\\' => 5,
             'CakePdf\\' => 8,
             'CakePHP\\' => 8,
+            'CakeCaptcha\\' => 12,
         ),
         'B' => 
         array (
@@ -302,6 +304,10 @@ class ComposerStaticInitd9d1e181ad33cc6ee4853f287711d238
         'CakePHP\\' => 
         array (
             0 => __DIR__ . '/..' . '/cakephp/cakephp-codesniffer/CakePHP',
+        ),
+        'CakeCaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/captcha-com/cakephp-captcha/src',
         ),
         'BootstrapUI\\' => 
         array (

@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Firebase\JWT\JWT;
 
 
 /**
@@ -12,9 +13,27 @@ use App\Controller\AppController;
  * @method \App\Model\Entity\User[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 class UsersController extends AppController
+
 {
+    
+    
+    public $paginate = [
+        'page' => 1,
+        'limit' => 10,
+        'maxLimit' => 100,
+        'fields' => [
+            'id', 'username', 'type'
+        ],
+        'sortWhitelist' => [
+            'id', 'username', 'type'
+        ]
+    ];
+    
+   
    public function initialize() {
         parent::initialize();
+        $this->Auth->allow(['token']);
+     
         $this->Auth->allow(['logout', 'add', 'menu','coverage']);
     }
     
@@ -49,16 +68,38 @@ class UsersController extends AppController
     
     
     public function login() {
+        
+        $this->loadComponent('CakeCaptcha.Captcha', [
+            'captchaConfig' => 'LoginCaptcha'
+        ]);
         if ($this->request->is('post')) {
-            $user = $this->Auth->identify();
-            if ($user) {
-                $this->Auth->setUser($user);                
-                return $this->redirect($this->Auth->redirectUrl()); 
+            
+             $isHuman = captcha_validate($this->request->data['CaptchaCode']);
+            
+            unset($this->request->data['CaptchaCode']);
+           
+
+  
+ 
+  if ($isHuman) {
+      // TODO: Captcha validation passed, perform protected action
+      $user = $this->Auth->identify();
+                if ($user) {
+                    $this->Auth->setUser($user);
+                    return $this->redirect($this->Auth->redirectUrl());
+                }
+                $this->Flash->error(__('Invalid username or password, try again'));
+            } else {
+     $this->Flash->error(__('CAPTCHA validation failed, try again.'));
+  }
+  }
+ 
+            
                           
             }
-            $this->Flash->error('Your username or password is incorrect.');
-        }
-    }
+          
+        
+    
 
     
 
@@ -113,10 +154,16 @@ class UsersController extends AppController
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
         $this->set(compact('user'));
+         
+    
         
        
        
     }
+    
+    
+    
+
     
     
    

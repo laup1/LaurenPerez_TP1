@@ -10,6 +10,7 @@
         "cakephp/cakephp": "3.6.*",
         "cakephp/migrations": "@stable",
         "cakephp/plugin-installer": "^1.0",
+        "captcha-com/cakephp-captcha": "4.*",
         "friendsofcake/bootstrap-ui": "^1.4",
         "friendsofcake/cakepdf": "^3.5",
         "friendsofcake/crud": "5.0",

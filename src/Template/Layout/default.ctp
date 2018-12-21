@@ -25,6 +25,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
+        
+        
 
    <?php
         echo $this->Html->css([
@@ -35,18 +37,34 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'
         ]);
         ?>
+    <html ng-app xmlns="http://www.w3.org/1999/xhtml">
+    
+
+    
+ 
 
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
      <?php
         echo $this->Html->script([
+            
+             'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+    'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'
+           /* 
             'https://code.jquery.com/jquery-1.12.4.js',
             'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
-             'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
-                ], ['block' => 'scriptLibraries']
+             'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', 
+        
+            'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js',
+            
+            */    ], ['block' => 'scriptLibraries']
         );
         ?>
+    
+  
 </head>
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
@@ -91,11 +109,19 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         ]);
                         ?>
                     </li>
+                
+                 <li><?=
+                        $this->Html->link('Drop files', [
+                            'controller' => 'Files',
+                            'action' => 'index'
+                        ]);
+                        ?>
+                    </li>
                     
                      <li><?=
                         $this->Html->link('monopage', [
-                            'controller' => 'Status',
-                            'action' => 'index'
+                            'controller' => 'Status'//,
+                            //'action' => 'index'
                         ]);
                         ?>
                     </li>
